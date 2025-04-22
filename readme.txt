@@ -5,3 +5,5 @@ These are the (relative) paths specified in com.example.XBRL_validation_with_xsd
 - xsd/catalog.xml
 
 Run com.example.XBRL_validation_with_xsd_no_xerces.XbrlValidationWithXsdNoXercesApplication.main
+
+Uses JDK 17.
