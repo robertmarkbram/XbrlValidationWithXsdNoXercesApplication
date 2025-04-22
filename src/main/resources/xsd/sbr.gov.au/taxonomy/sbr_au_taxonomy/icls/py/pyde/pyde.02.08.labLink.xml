@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xlink:type="simple" xlink:href="../../../fdtn/tech.sbr.01.02.xsd#businessDefinition"/>
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xlink:type="simple" xlink:href="../../../fdtn/tech.sbr.01.02.xsd#dataElementGuidance"/>
+    <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+        <link:loc xlink:type="locator" xlink:href="pyde.02.08.data.xsd#pyde.02.08_pydeAbstract" xlink:label="loc_pyde.02.08_pydeAbstract"/>
+        <link:label xlink:type="resource" xlink:label="lbl_pydeAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Party Demographics</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_pyde.02.08_pydeAbstract" xlink:to="lbl_pydeAbstract"/>
+        <link:loc xlink:type="locator" xlink:href="pyde.02.08.data.xsd#DE15" xlink:label="loc_DE15"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE15" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Address Details Country Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE15" xlink:to="lbl_DE15"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE15" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">This represents the Country Code as prescribed by AS4590 and inherited from ISO 3166</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyde.02.08.data.xsd#DE528" xlink:label="loc_DE528"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE528" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Address Details Country Name Text</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE528" xlink:to="lbl_DE528"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE528" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">This represents the Country Name as prescribed by AS4590 and inherited from ISO 3166</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyde.02.08.data.xsd#DE4867" xlink:label="loc_DE4867"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE4867" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Organisation Details International Related Party Country Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE4867" xlink:to="lbl_DE4867"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE4867" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The foreign location country code of international related parties.</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyde.02.08.data.xsd#DE4032" xlink:label="loc_DE4032"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE4032" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Party Auditor Professional Body Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE4032" xlink:to="lbl_DE4032"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE4032" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A code to indicate the professional body the auditor belongs to.</link:label>
+        <link:label xlink:type="resource" xlink:label="lbl_DE4032" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xml:lang="en">Valid values are:
+
+1 = Registered company auditor
+2 = Member of Certified Practising Accountants (CPA) Australia
+3 = Member of the Institute of Chartered Accountants in Australia (ICAA)
+4 = Member of the Institute of Public Accountants (IPA)
+5 = Member or fellow of the Association of Taxation and Management Accountants (ATMA)
+6 = Fellow of the National Tax and Accountants Association Ltd (NTAA)
+7 = A specialist auditor of the SMSF Professionals' Association of Australia (SPAA)
+8 = A member of IAA (Institute of Actuaries Australia)</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyde.02.08.data.xsd#DE58" xlink:label="loc_DE58"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE58" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Person Demographic Details Birth Country Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE58" xlink:to="lbl_DE58"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE58" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A code name that represents the country where the person was born.</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyde.02.08.data.xsd#DE59" xlink:label="loc_DE59"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE59" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Person Demographic Details Citizenship Country Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE59" xlink:to="lbl_DE59"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE59" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A code name that represents a country that has conferred a person's citizenship.</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyde.02.08.data.xsd#DE727" xlink:label="loc_DE727"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE727" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Residency Tax Purposes Country Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE727" xlink:to="lbl_DE727"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE727" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The code applicable to the payee's country of residence for tax purposes.</link:label>
+    </link:labelLink>
+</link:linkbase>

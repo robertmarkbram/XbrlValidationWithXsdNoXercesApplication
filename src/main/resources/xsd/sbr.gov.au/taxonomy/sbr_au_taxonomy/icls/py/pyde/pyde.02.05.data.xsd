@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pyde.02.05="http://sbr.gov.au/icls/py/pyde/pyde.02.05.data" xmlns:tech.01.02="http://sbr.gov.au/fdtn/sbr.01.02.tech" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:dtyp.02.06="http://sbr.gov.au/fdtn/sbr.02.06.dtyp" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pyde.02.00="http://sbr.gov.au/icls/py/pyde/pyde.02.00.data" targetNamespace="http://sbr.gov.au/icls/py/pyde/pyde.02.05.data" elementFormDefault="qualified">
+    <xsd:import namespace="http://sbr.gov.au/fdtn/sbr.02.06.dtyp" schemaLocation="../../../fdtn/dtyp.sbr.02.06.xsd"/>
+    <xsd:import namespace="http://sbr.gov.au/fdtn/sbr.01.02.tech" schemaLocation="../../../fdtn/tech.sbr.01.02.xsd"/>
+    <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+    <xsd:import namespace="http://sbr.gov.au/icls/py/pyde/pyde.02.00.data" schemaLocation="pyde.02.00.data.xsd"/>
+    <xsd:element name="pydeAbstract" id="pyde.02.05_pydeAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="OrganisationDetails.CharitableOrganisation.Indicator" id="DE4030" type="xbrli:booleanItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+    <xsd:element name="OrganisationDetails.CloselyHeldTrust.Indicator" id="DE4065" type="xbrli:booleanItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+    <xsd:element name="OrganisationDetails.MainIncomeActivity.Description" id="DE247" type="xbrli:stringItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+    <xsd:element name="OrganisationDetails.OperationCease.Indicator" id="DE4031" type="xbrli:booleanItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+    <xsd:element name="OrganisationDetails.PlaceOfIncorporation.Text" id="DE2509" type="xbrli:stringItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+    <xsd:element name="OrganisationNameDetails.NameChangeReason.Description" id="DE2803" type="xbrli:stringItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+    <xsd:element name="Party.AuditorProfessionalBody.Code" id="DE4032" type="dtyp.02.06:sbrAuditorProfessionalBodyTypeItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+    <xsd:element name="Party.TrustType.Code" id="DE4033" type="dtyp.02.06:sbrTrustTypeItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+    <xsd:element name="PersonNameDetails.Usage.Code" id="DE870" type="dtyp.02.06:sbrPersonNameUsageItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+    <xsd:element name="PersonUnstructuredName.Usage.Code" id="DE503" type="dtyp.02.06:sbrPersonNameUsageItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+    <xsd:element name="OrganisationNameDetails" id="DT172" substitutionGroup="xbrli:tuple" nillable="true">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element minOccurs="0" ref="pyde.02.00:OrganisationNameDetails.Currency.Code"/>
+                <xsd:element minOccurs="0" ref="pyde.02.05:OrganisationNameDetails.NameChangeReason.Description"/>
+                <xsd:element minOccurs="0" ref="pyde.02.00:OrganisationNameDetails.OrganisationalName.Text"/>
+                <xsd:element minOccurs="0" ref="pyde.02.00:OrganisationNameDetails.OrganisationalNameEnd.Date"/>
+                <xsd:element minOccurs="0" ref="pyde.02.00:OrganisationNameDetails.OrganisationalNameStart.Date"/>
+                <xsd:element minOccurs="0" ref="pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code"/>
+                <xsd:element minOccurs="0" ref="pyde.02.00:OrganisationNameDetails.Usage.Code"/>
+            </xsd:sequence>
+            <xsd:attribute name="id" use="optional" type="xsd:ID"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="PersonNameDetails" id="DT178" substitutionGroup="xbrli:tuple" nillable="true">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:PersonNameDetails.Currency.Code"/>
+                <xsd:element maxOccurs="unbounded" ref="pyde.02.00:PersonNameDetails.FamilyName.Text"/>
+                <xsd:element maxOccurs="unbounded" ref="pyde.02.00:PersonNameDetails.GivenName.Text"/>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:PersonNameDetails.NameStart.Date"/>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:PersonNameDetails.NameSuffix.Text"/>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:PersonNameDetails.OtherGivenName.Text"/>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:PersonNameDetails.PersonNameType.Code"/>
+                <xsd:element minOccurs="0" ref="pyde.02.00:PersonNameDetails.Position.Text"/>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:PersonNameDetails.Title.Text"/>
+                <xsd:element minOccurs="0" ref="pyde.02.05:PersonNameDetails.Usage.Code"/>
+            </xsd:sequence>
+            <xsd:attribute name="id" use="optional" type="xsd:ID"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="PersonUnstructuredName" id="DT217" substitutionGroup="xbrli:tuple" nillable="true">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:PersonUnstructuredName.FullName.Text"/>
+                <xsd:element maxOccurs="unbounded" ref="pyde.02.05:PersonUnstructuredName.Usage.Code"/>
+            </xsd:sequence>
+            <xsd:attribute name="id" use="optional" type="xsd:ID"/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

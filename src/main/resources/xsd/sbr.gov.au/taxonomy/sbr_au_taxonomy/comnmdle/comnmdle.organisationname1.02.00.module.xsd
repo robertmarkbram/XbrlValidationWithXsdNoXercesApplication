@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema targetNamespace="http://sbr.gov.au/comnmdle/comnmdle.organisationname1.02.00.module" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:orgname1.02.00="http://sbr.gov.au/comnmdle/comnmdle.organisationname1.02.00.module" xmlns:pyde.02.00="http://sbr.gov.au/icls/py/pyde/pyde.02.00.data" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:linkbaseRef xlink:type="simple" xlink:href="comnmdle.organisationname1.02.00.defLink.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="../icls/py/pyde/pyde.02.00.labLink.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:linkbaseRef xlink:type="simple" xlink:href="../icls/py/pyde/pyde.02.00.refLink.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+      <link:roleType roleURI="http://sbr.gov.au/comnmdle/comnmdle.organisationname1.02.00/labRole" id="comnmdle.organisationname1labLinkInfoCls">
+        <link:definition>comnmdle_organisationname1</link:definition>
+        <link:usedOn>link:labelLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sbr.gov.au/comnmdle/comnmdle.organisationname1.02.00/refRole" id="comnmdle.organisationname1refLink">
+        <link:definition>comnmdle_organisationname1</link:definition>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sbr.gov.au/comnmdle/comnmdle.organisationname1.02.00/defRole" id="comnmdle.organisationname1defLink">
+        <link:definition>comnmdle_organisationname1</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xsd:import namespace="http://sbr.gov.au/fdtn/sbr.01.02.tech" schemaLocation="../fdtn/tech.sbr.01.02.xsd"/>
+  <xsd:import namespace="http://sbr.gov.au/icls/py/pyde/pyde.02.00.data" schemaLocation="../icls/py/pyde/pyde.02.00.data.xsd"/>
+  <xsd:element name="OrganisationNameDetails" id="RT586" substitutionGroup="xbrli:tuple" nillable="true">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code"/>
+        <xsd:element ref="pyde.02.00:OrganisationNameDetails.OrganisationalName.Text"/>
+      </xsd:sequence>
+      <xsd:attribute name="id" use="optional" type="xsd:ID"/>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

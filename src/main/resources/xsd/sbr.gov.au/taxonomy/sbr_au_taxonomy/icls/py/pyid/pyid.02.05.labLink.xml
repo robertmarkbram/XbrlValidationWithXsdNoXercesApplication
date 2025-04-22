@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xlink:type="simple" xlink:href="../../../fdtn/tech.sbr.01.02.xsd#businessDefinition"/>
+    <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+        <link:loc xlink:type="locator" xlink:href="pyid.02.05.data.xsd#DE9" xlink:label="loc_DE9"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE9" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Identifiers Employment Payroll Number Identifier</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE9" xlink:to="lbl_DE9"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE9" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Number allocated by the payer payroll system to identify a payee. This identifier will be quoted on any correspondence regarding the payee's declaration to assist correct identification of the payee.</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyid.02.05.data.xsd#DE12710" xlink:label="loc_DE12710"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12710" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Identifiers Tax File Number Not Provided Indicator</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12710" xlink:to="lbl_DE12710"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12710" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Indicates that the Tax File Number has not been provided.</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyid.02.05.data.xsd#DE12711" xlink:label="loc_DE12711"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12711" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Identifiers Superannuation Fund Generated Employer Indicator</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12711" xlink:to="lbl_DE12711"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12711" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Indicates that the identifier is a superannuation fund generated employer ID.</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyid.02.05.data.xsd#pyid.02.05_pyidAbstract" xlink:label="loc_pyid.02.05_pyidAbstract"/>
+        <link:label xlink:type="resource" xlink:label="lbl_pyidAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Party Identification</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_pyid.02.05_pyidAbstract" xlink:to="lbl_pyidAbstract"/>
+    </link:labelLink>
+</link:linkbase>

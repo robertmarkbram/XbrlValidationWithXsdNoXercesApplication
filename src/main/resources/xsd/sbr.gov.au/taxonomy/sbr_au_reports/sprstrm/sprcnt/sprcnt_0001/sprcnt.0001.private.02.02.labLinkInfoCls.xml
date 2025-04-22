@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/software-developers/developer-tools/sbr-disclaimer-and-conditions-of-use -->
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xlink:type="simple" xlink:href="../../../../sbr_au_taxonomy/fdtn/tech.sbr.01.02.xsd#Label"/>
+    <link:roleRef roleURI="http://sbr.gov.au/rprt/sprstrm/sprcnt/sprcnt.0001.private.02.02/labRole" xlink:type="simple" xlink:href="sprcnt.0001.private.02.02.module.xsd#sprcnt.0001.02.02.privatelabLinkInfoCls"/>
+    <link:labelLink xlink:type="extended" xlink:role="http://sbr.gov.au/rprt/sprstrm/sprcnt/sprcnt.0001.private.02.02/labRole">
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#HC100244" xlink:label="loc_HC100244"/>
+        <link:label xlink:type="resource" xlink:label="lbl_HC100244" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Employer</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_HC100244" xlink:to="lbl_HC100244"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#RA100244" xlink:label="loc_RA100244"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RA100244" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">EmployerPrimaryItems [Abstract]</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RA100244" xlink:to="lbl_RA100244"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#HC100245" xlink:label="loc_HC100245"/>
+        <link:label xlink:type="resource" xlink:label="lbl_HC100245" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">MessageSender</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_HC100245" xlink:to="lbl_HC100245"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#RA100245" xlink:label="loc_RA100245"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RA100245" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">MessageSenderPrimaryItems [Abstract]</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RA100245" xlink:to="lbl_RA100245"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#HC100246" xlink:label="loc_HC100246"/>
+        <link:label xlink:type="resource" xlink:label="lbl_HC100246" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Payee</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_HC100246" xlink:to="lbl_HC100246"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#RA100246" xlink:label="loc_RA100246"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RA100246" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">PayeePrimaryItems [Abstract]</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RA100246" xlink:to="lbl_RA100246"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#HC100247" xlink:label="loc_HC100247"/>
+        <link:label xlink:type="resource" xlink:label="lbl_HC100247" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">PayerPayee</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_HC100247" xlink:to="lbl_HC100247"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#RA100247" xlink:label="loc_RA100247"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RA100247" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">PayerPayeePrimaryItems [Abstract]</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RA100247" xlink:to="lbl_RA100247"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#HC100248" xlink:label="loc_HC100248"/>
+        <link:label xlink:type="resource" xlink:label="lbl_HC100248" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">RprtPyType</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_HC100248" xlink:to="lbl_HC100248"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#RA100248" xlink:label="loc_RA100248"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RA100248" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">RprtPyTypePrimaryItems [Abstract]</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RA100248" xlink:to="lbl_RA100248"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#HC100249" xlink:label="loc_HC100249"/>
+        <link:label xlink:type="resource" xlink:label="lbl_HC100249" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">SprFndAbnEmpAbnSuperFundMember</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_HC100249" xlink:to="lbl_HC100249"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#RA100249" xlink:label="loc_RA100249"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RA100249" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">SprFndAbnEmpAbnSuperFundMemberPrimaryItems [Abstract]</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RA100249" xlink:to="lbl_RA100249"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#HC100250" xlink:label="loc_HC100250"/>
+        <link:label xlink:type="resource" xlink:label="lbl_HC100250" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">SprFndUSIPayee</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_HC100250" xlink:to="lbl_HC100250"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#RA100250" xlink:label="loc_RA100250"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RA100250" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">SprFndUSIPayeePrimaryItems [Abstract]</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RA100250" xlink:to="lbl_RA100250"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#HC100251" xlink:label="loc_HC100251"/>
+        <link:label xlink:type="resource" xlink:label="lbl_HC100251" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">SprFndUSISprFndAbnEmpAbnSuperFundMember</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_HC100251" xlink:to="lbl_HC100251"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.private.02.02.module.xsd#RA100251" xlink:label="loc_RA100251"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RA100251" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">SprFndUSISprFndAbnEmpAbnSuperFundMemberPrimaryItems [Abstract]</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RA100251" xlink:to="lbl_RA100251"/>
+    </link:labelLink>
+</link:linkbase>

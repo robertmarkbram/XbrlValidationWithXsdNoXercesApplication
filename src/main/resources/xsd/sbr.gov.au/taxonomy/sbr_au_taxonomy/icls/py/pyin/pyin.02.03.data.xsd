@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dtyp.02.03="http://sbr.gov.au/fdtn/sbr.02.03.dtyp" xmlns:pyin.02.03="http://sbr.gov.au/icls/py/pyin/pyin.02.03.data" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:pyin.02.00="http://sbr.gov.au/icls/py/pyin/pyin.02.00.data" xmlns:tech.01.02="http://sbr.gov.au/fdtn/sbr.01.02.tech" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://sbr.gov.au/icls/py/pyin/pyin.02.03.data" elementFormDefault="qualified">
+	<xsd:annotation>
+		<xsd:appinfo>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:import namespace="http://sbr.gov.au/fdtn/sbr.01.02.tech" schemaLocation="../../../fdtn/tech.sbr.01.02.xsd"/>
+	<xsd:import namespace="http://sbr.gov.au/fdtn/sbr.02.03.dtyp" schemaLocation="../../../fdtn/dtyp.sbr.02.03.xsd"/>
+	<xsd:import namespace="http://sbr.gov.au/icls/py/pyin/pyin.02.00.data" schemaLocation="pyin.02.00.data.xsd"/>
+	<xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<xsd:element name="pyinAbstract" id="pyin.02.03_pyinAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+	<xsd:element name="PaymentMechanism.DirectCreditAccount.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE3192" xbrli:periodType="duration" type="dtyp.02.03:sbrDirectCreditAccountIdentifierItemType" block="substitution"/>
+	<xsd:element name="PaymentMechanism.DirectCreditName.Text" substitutionGroup="xbrli:item" nillable="true" id="DE3191" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Declaration.StatementType.Code" substitutionGroup="xbrli:item" nillable="true" id="DE3132" xbrli:periodType="duration" type="dtyp.02.03:sbrDeclarationStatementTypeItemType" block="substitution"/>
+	<xsd:element name="PaymentMechanism.PaymentMethod.Code" substitutionGroup="xbrli:item" nillable="true" id="DE824" xbrli:periodType="duration" type="dtyp.02.03:sbrPaymentMethodCodeItemType" block="substitution"/>
+	<xsd:element name="Report.PartyType.Code" substitutionGroup="xbrli:item" nillable="true" id="DE822" xbrli:periodType="duration" type="dtyp.02.03:sbrPartyTypeCodeItemType" block="substitution"/>
+	<xsd:element name="Declaration" abstract="false" substitutionGroup="xbrli:tuple" nillable="true" id="DT142">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="pyin.02.00:Declaration.Signature.Date" minOccurs="0"/>
+				<xsd:element ref="pyin.02.00:Declaration.SignatureSupportedByHardCopy.Indicator" minOccurs="0"/>
+				<xsd:element ref="pyin.02.00:Declaration.StatementAccepted.Indicator"/>
+				<xsd:element ref="pyin.02.00:Declaration.Statement.Text" minOccurs="0"/>
+				<xsd:element ref="pyin.02.03:Declaration.StatementType.Code"/>
+				<xsd:element ref="pyin.02.00:Declaration.SignatoryIdentifier.Text"/>
+			</xsd:sequence>
+			<xsd:attribute name="id" type="xsd:ID" use="optional"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

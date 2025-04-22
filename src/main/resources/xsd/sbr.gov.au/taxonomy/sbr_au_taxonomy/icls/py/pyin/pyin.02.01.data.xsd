@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dtyp.02.01="http://sbr.gov.au/fdtn/sbr.02.01.dtyp" xmlns:pyin.02.01="http://sbr.gov.au/icls/py/pyin/pyin.02.01.data" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://sbr.gov.au/icls/py/pyin/pyin.02.01.data" elementFormDefault="qualified">
+	<xsd:annotation>
+		<xsd:appinfo>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:import namespace="http://sbr.gov.au/fdtn/sbr.01.02.tech" schemaLocation="../../../fdtn/tech.sbr.01.02.xsd"/>
+	<xsd:import namespace="http://sbr.gov.au/fdtn/sbr.02.01.dtyp" schemaLocation="../../../fdtn/dtyp.sbr.02.01.xsd"/>
+	<xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<xsd:element name="pyinAbstract" type="xbrli:stringItemType" abstract="true" substitutionGroup="xbrli:item" id="pyin.02.01_pyinAbstract" xbrli:periodType="instant"/>
+	<xsd:element name="PaymentRecord.ArrangedPayment.Datetime" type="xbrli:dateTimeItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" id="DE911" xbrli:periodType="duration"/>
+	<xsd:element name="PaymentRecord.PaymentStatus.Code" type="dtyp.02.01:sbrPaymentStatusCodeItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" id="DE831" xbrli:periodType="duration"/>
+	<xsd:element name="Report.Type.Code" substitutionGroup="xbrli:item" nillable="true" id="DE833" xbrli:periodType="duration" type="dtyp.02.01:sbrReportTypeCodeItemType" block="substitution"/>
+	<xsd:element name="Lodgment.Channel.Code" substitutionGroup="xbrli:item" nillable="true" id="DE3148" xbrli:periodType="duration" type="dtyp.02.01:sbrChannelItemType" block="substitution"/>
+	<xsd:element name="PaymentMechanism.CustomerReference.Number" substitutionGroup="xbrli:item" nillable="true" id="DE626" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+</xsd:schema>

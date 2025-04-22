@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:address3.02.01="http://sbr.gov.au/comnmdle/comnmdle.addressdetails3.02.01.module" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:tech.01.02="http://sbr.gov.au/fdtn/sbr.01.02.tech" xmlns:pyde.02.01="http://sbr.gov.au/icls/py/pyde/pyde.02.01.data" xmlns:pyde.02.08="http://sbr.gov.au/icls/py/pyde/pyde.02.08.data" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:pyde.02.00="http://sbr.gov.au/icls/py/pyde/pyde.02.00.data" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://sbr.gov.au/comnmdle/comnmdle.addressdetails3.02.01.module" elementFormDefault="qualified">
+    <xsd:annotation>
+        <xsd:appinfo>
+            <link:linkbaseRef xlink:type="simple" xlink:href="comnmdle.addressdetails3.02.01.defLink.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+            <link:linkbaseRef xlink:type="simple" xlink:href="../icls/py/pyde/pyde.02.01.labLink.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+            <link:linkbaseRef xlink:type="simple" xlink:href="../icls/py/pyde/pyde.02.00.labLink.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+            <link:linkbaseRef xlink:type="simple" xlink:href="../icls/py/pyde/pyde.02.08.labLink.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+            <link:linkbaseRef xlink:type="simple" xlink:href="../icls/py/pyde/pyde.02.00.refLink.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+            <link:linkbaseRef xlink:type="simple" xlink:href="../icls/py/pyde/pyde.02.08.refLink.xml" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+            <link:roleType roleURI="http://sbr.gov.au/comnmdle.addressdetails3.02.01/defrole" id="comnmdle.addressdetails3.02.01.defLink">
+                <link:definition>comnmdle_addressdetails3</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+        </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:import namespace="http://sbr.gov.au/icls/py/pyde/pyde.02.01.data" schemaLocation="../icls/py/pyde/pyde.02.01.data.xsd"/>
+    <xsd:import namespace="http://sbr.gov.au/icls/py/pyde/pyde.02.00.data" schemaLocation="../icls/py/pyde/pyde.02.00.data.xsd"/>
+    <xsd:import namespace="http://sbr.gov.au/icls/py/pyde/pyde.02.08.data" schemaLocation="../icls/py/pyde/pyde.02.08.data.xsd"/>
+    <xsd:import namespace="http://sbr.gov.au/fdtn/sbr.01.02.tech" schemaLocation="../fdtn/tech.sbr.01.02.xsd"/>
+    <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+    <xsd:element name="AddressDetails" id="RT1017" substitutionGroup="xbrli:tuple" nillable="true">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="pyde.02.01:AddressDetails.Usage.Code"/>
+                <xsd:element ref="pyde.02.00:AddressDetails.Line1.Text"/>
+                <xsd:element minOccurs="0" ref="pyde.02.00:AddressDetails.Line2.Text"/>
+                <xsd:element minOccurs="0" ref="pyde.02.00:AddressDetails.Line3.Text"/>
+                <xsd:element minOccurs="0" ref="pyde.02.00:AddressDetails.Line4.Text"/>
+                <xsd:element minOccurs="0" ref="pyde.02.00:AddressDetails.LocalityName.Text"/>
+                <xsd:element minOccurs="0" ref="pyde.02.00:AddressDetails.Postcode.Text"/>
+                <xsd:element minOccurs="0" ref="pyde.02.00:AddressDetails.StateOrTerritory.Code"/>
+                <xsd:element minOccurs="0" ref="pyde.02.08:AddressDetails.Country.Code"/>
+            </xsd:sequence>
+            <xsd:attribute name="id" use="optional" type="xsd:ID"/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

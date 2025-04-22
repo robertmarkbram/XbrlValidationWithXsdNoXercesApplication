@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/software-developers/developer-tools/sbr-disclaimer-and-conditions-of-use -->
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xlink:type="simple" xlink:href="../fdtn/tech.sbr.01.02.xsd#businessDefinition"/>
+    <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DM5" xlink:label="loc_DM5"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DM5" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Report Party Type Dimension</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DM5" xlink:to="lbl_DM5"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DM5" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The context that determines the type of party involved in the report, to which the data items (facts) in the report will be related to</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV541" xlink:label="loc_DV541"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV541" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Payee</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV541" xlink:to="lbl_DV541"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV541" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">An individual who was hired by an employer to do a specific job.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV5947" xlink:label="loc_DV5947"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV5947" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Message Sender</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV5947" xlink:to="lbl_DV5947"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV5947" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A party responsible for sending a message</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV5948" xlink:label="loc_DV5948"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV5948" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Message Receiver</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV5948" xlink:to="lbl_DV5948"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV5948" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A party that is intended to receive a message</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV5949" xlink:label="loc_DV5949"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV5949" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Transferring Fund</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV5949" xlink:to="lbl_DV5949"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV5949" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The superannuation fund from which fund is rolled over.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV5950" xlink:label="loc_DV5950"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV5950" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Super Fund Member</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV5950" xlink:to="lbl_DV5950"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV5950" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A specific member within a superannuation fund.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV5951" xlink:label="loc_DV5951"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV5951" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Employer</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV5951" xlink:to="lbl_DV5951"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV5951" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">An entity that employs or contracts workers.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV5970" xlink:label="loc_DV5970"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV5970" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Not For Profit</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV5970" xlink:to="lbl_DV5970"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV5970" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Information in relation to not for profit entity.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV148" xlink:label="loc_DV148"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV148" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Acquiring Entity</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV148" xlink:to="lbl_DV148"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV148" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The individual, business or enterprise that is buying, leasing or obtaining advice/information.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV156" xlink:label="loc_DV156"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV156" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Trustee Or Partner</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV156" xlink:to="lbl_DV156"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV156" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A trustee is responsible for running a fund and acting in the best interests of the members. A partner is a member of a group of people in business together (i.e. a partnership).</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV30" xlink:label="loc_DV30"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV30" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Intermediary</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV30" xlink:to="lbl_DV30"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV30" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The party acting on behalf of the reporting party to assist in fulfilment of reporting obligations.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV29" xlink:label="loc_DV29"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV29" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Reporting Party</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV29" xlink:to="lbl_DV29"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV29" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The party responsible for information in the reporting obligation.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV37" xlink:label="loc_DV37"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV37" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Auditor</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV37" xlink:to="lbl_DV37"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV37" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The party engaged to perform an audit on the reporting party.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV32" xlink:label="loc_DV32"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV32" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Government Agency</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV32" xlink:to="lbl_DV32"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV32" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">An organisation responsible for the oversight and administration of a specific governing function of a nation.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV153" xlink:label="loc_DV153"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV153" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Payer</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV153" xlink:to="lbl_DV153"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV153" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The party that is paying an amount to another entity and is not the reporting party.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV151" xlink:label="loc_DV151"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV151" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Investor</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV151" xlink:to="lbl_DV151"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV151" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A party that receives a return on a given investment.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV150" xlink:label="loc_DV150"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV150" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Group Member</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV150" xlink:to="lbl_DV150"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV150" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A party that is a member of a recognised collection of parties.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV152" xlink:label="loc_DV152"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV152" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Joining Entity</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV152" xlink:to="lbl_DV152"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV152" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A party which has joined another party/entity to create a consolidated entity.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV155" xlink:label="loc_DV155"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV155" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Transferor</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV155" xlink:to="lbl_DV155"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV155" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The party who initiated a transfer of an asset to another party.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV154" xlink:label="loc_DV154"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV154" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Specified Individual</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV154" xlink:to="lbl_DV154"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV154" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The individual elected as responsible for the family trust.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV149" xlink:label="loc_DV149"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV149" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Family Trust</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV149" xlink:to="lbl_DV149"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV149" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A trust where a particular individual holds control of assets whose family is to benefit from the income of those assets.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV157" xlink:label="loc_DV157"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV157" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Local Agent</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV157" xlink:to="lbl_DV157"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV157" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The person or registered Australian company that is appointed by a foreign company to be responsible for undertaking all administrative duties on behalf of that foreign company to meet Australian reporting obligations.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV31" xlink:label="loc_DV31"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV31" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Responsible Entity</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV31" xlink:to="lbl_DV31"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV31" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The entity that has an Australian financial services licence and acts in a manager/trustee capacity for a managed investment scheme.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV38" xlink:label="loc_DV38"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV38" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Administrator</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV38" xlink:to="lbl_DV38"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV38" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The party who has been appointed as the manager of administrative business operations.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV43" xlink:label="loc_DV43"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV43" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Consolidated Party</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV43" xlink:to="lbl_DV43"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV43" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A group of separate entities that submit their reporting obligations as those of a single entity.</link:label>
+        <link:loc xlink:type="locator" xlink:href="RprtPyType.02.07.data.xsd#DV6216" xlink:label="loc_DV6216"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV6216" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Employee</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DV6216" xlink:to="lbl_DV6216"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DV6216" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A person who receives payment in the form of salary or wages in return for work or services.</link:label>
+    </link:labelLink>
+</link:linkbase>

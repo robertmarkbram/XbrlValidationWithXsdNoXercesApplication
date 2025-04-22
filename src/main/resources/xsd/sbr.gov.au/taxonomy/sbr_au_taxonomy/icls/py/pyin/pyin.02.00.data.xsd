@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dtyp.02.00="http://sbr.gov.au/fdtn/sbr.02.00.dtyp" xmlns:pyin.02.00="http://sbr.gov.au/icls/py/pyin/pyin.02.00.data" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://sbr.gov.au/icls/py/pyin/pyin.02.00.data" elementFormDefault="qualified">
+	<xsd:annotation>
+		<xsd:appinfo>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:import namespace="http://sbr.gov.au/fdtn/sbr.01.02.tech" schemaLocation="../../../fdtn/tech.sbr.01.02.xsd" />
+	<xsd:import namespace="http://sbr.gov.au/fdtn/sbr.02.00.dtyp" schemaLocation="../../../fdtn/dtyp.sbr.02.00.xsd" />
+	<xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<xsd:element name="pyinAbstract" id="pyin.02.00_pyinAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+	<xsd:element name="BusinessDocument.BusinessGeneratedIdentifier.Text" substitutionGroup="xbrli:item" nillable="true" id="DE532" xbrli:periodType="duration" type="dtyp.02.00:sbrDocumentIdentificationItemType" block="substitution"/>
+	<xsd:element name="BusinessDocument.Creation.Datetime" substitutionGroup="xbrli:item" nillable="true" id="DE531" xbrli:periodType="duration" type="xbrli:dateTimeItemType" block="substitution"/>
+	<xsd:element name="BusinessDocument.GovernmentGeneratedIdentifier.Text" substitutionGroup="xbrli:item" nillable="true" id="DE1930" xbrli:periodType="duration" type="dtyp.02.00:sbrDocumentIdentificationItemType" block="substitution"/>
+	<xsd:element name="BusinessDocument.Instance.BinaryObject" substitutionGroup="xbrli:item" nillable="true" id="DE1934" xbrli:periodType="duration" type="xbrli:hexBinaryItemType" block="substitution"/>
+	<xsd:element name="BusinessDocument.Sequence.Number" substitutionGroup="xbrli:item" nillable="true" id="DE1939" xbrli:periodType="duration" type="dtyp.02.00:sbrGenericNumericItemType" block="substitution"/>
+	<xsd:element name="BusinessDocument.ValidationUniformResourceIdentifier.Text" substitutionGroup="xbrli:item" nillable="true" id="DE1933" xbrli:periodType="duration" type="xbrli:anyURIItemType" block="substitution"/>
+	<xsd:element name="Declaration.SignatoryIdentifier.Text" substitutionGroup="xbrli:item" nillable="true" id="DE3147" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Declaration.SignatureSupportedByHardCopy.Indicator" substitutionGroup="xbrli:item" nillable="true" id="DE5" xbrli:periodType="duration" type="xbrli:booleanItemType" block="substitution"/>
+	<xsd:element name="Declaration.Signature.Date" substitutionGroup="xbrli:item" nillable="true" id="DE4" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="Declaration.StatementAccepted.Indicator" substitutionGroup="xbrli:item" nillable="true" id="DE229" xbrli:periodType="duration" type="xbrli:booleanItemType" block="substitution"/>
+	<xsd:element name="Declaration.StatementType.Code" substitutionGroup="xbrli:item" nillable="true" id="DE3132" xbrli:periodType="duration" type="dtyp.02.00:sbrDeclarationStatementTypeItemType" block="substitution"/>
+	<xsd:element name="Declaration.Statement.Text" substitutionGroup="xbrli:item" nillable="true" id="DE230" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="InteractionPartner.RoleType.Code" substitutionGroup="xbrli:item" nillable="true" id="DE553" xbrli:periodType="duration" type="dtyp.02.00:sbrInteractionPartnerRoleTypeCodeItemType" block="substitution"/>
+	<xsd:element name="Lodgment.Channel.Code" substitutionGroup="xbrli:item" nillable="true" id="DE3148" xbrli:periodType="duration" type="dtyp.02.00:sbrChannelItemType" block="substitution"/>
+	<xsd:element name="Lodgment.Due.Date" substitutionGroup="xbrli:item" nillable="true" id="DE162" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="Lodgment.FinalReturn.Indicator" substitutionGroup="xbrli:item" nillable="true" id="DE1624" xbrli:periodType="duration" type="xbrli:booleanItemType" block="substitution"/>
+	<xsd:element name="Lodgment.Frequency.Code" substitutionGroup="xbrli:item" nillable="true" id="DE882" xbrli:periodType="duration" type="dtyp.02.00:sbrLodgmentFrequencyItemType" block="substitution"/>
+	<xsd:element name="Lodgment.ObligationName.Text" substitutionGroup="xbrli:item" nillable="true" id="DE3127" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Lodgment.OrganisationReference.Text" substitutionGroup="xbrli:item" nillable="true" id="DE524" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Lodgment.PeriodEnd.Date" substitutionGroup="xbrli:item" nillable="true" id="DE32" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="Lodgment.PeriodMonth.Count" substitutionGroup="xbrli:item" nillable="true" id="DE820" xbrli:periodType="duration" type="xbrli:nonNegativeIntegerItemType" block="substitution"/>
+	<xsd:element name="Lodgment.PeriodMonth.Text" substitutionGroup="xbrli:item" nillable="true" id="DE818" xbrli:periodType="duration" type="dtyp.02.00:sbrMonthNameItemType" block="substitution"/>
+	<xsd:element name="Lodgment.PeriodStart.Date" substitutionGroup="xbrli:item" nillable="true" id="DE33" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="Lodgment.PeriodYear.Year" substitutionGroup="xbrli:item" nillable="true" id="DE819" xbrli:periodType="duration" type="xbrli:gYearItemType" block="substitution"/>
+	<xsd:element name="Lodgment.Receipt.Datetime" substitutionGroup="xbrli:item" nillable="true" id="DE544" xbrli:periodType="duration" type="xbrli:dateTimeItemType" block="substitution"/>
+	<xsd:element name="Lodgment.Receipt.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE543" xbrli:periodType="duration" type="dtyp.02.00:sbrIdentifierDesignationItemType" block="substitution"/>
+	<xsd:element name="Lodgment.Received.Date" substitutionGroup="xbrli:item" nillable="true" id="DE161" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="Lodgment.Received.Time" substitutionGroup="xbrli:item" nillable="true" id="DE821" xbrli:periodType="duration" type="xbrli:timeItemType" block="substitution"/>
+	<xsd:element name="Lodgment.SplitPeriods.Count" substitutionGroup="xbrli:item" nillable="true" id="DE823" xbrli:periodType="duration" type="xbrli:nonNegativeIntegerItemType" block="substitution"/>
+	<xsd:element name="Lodgment.Status.Code" substitutionGroup="xbrli:item" nillable="true" id="DE835" xbrli:periodType="duration" type="dtyp.02.00:sbrLodgmentStatusCodeItemType" block="substitution"/>
+	<xsd:element name="Lodgment.Status.Date" substitutionGroup="xbrli:item" nillable="true" id="DE3126" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="Lodgment.Status.Text" substitutionGroup="xbrli:item" nillable="true" id="DE3143" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Message.HeaderValidationUniformResourceIdentifier.Text" substitutionGroup="xbrli:item" nillable="true" id="DE1932" xbrli:periodType="duration" type="xbrli:anyURIItemType" block="substitution"/>
+	<xsd:element name="Message.NonRepudiationToken.Text" substitutionGroup="xbrli:item" nillable="true" id="DE2659" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Message.TrackingIdentifier.Text" substitutionGroup="xbrli:item" nillable="true" id="DE2783" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Message.Type.Text" substitutionGroup="xbrli:item" nillable="true" id="DE1931" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Message.Attachment.Description.Text" substitutionGroup="xbrli:item" nillable="true" id="DE1924" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Message.Attachment.FileName.Text" substitutionGroup="xbrli:item" nillable="true" id="DE2782" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Message.Attachment.Instance.BinaryObject" substitutionGroup="xbrli:item" nillable="true" id="DE1935" xbrli:periodType="duration" type="xbrli:hexBinaryItemType" block="substitution"/>
+	<xsd:element name="Message.Attachment.MIMEType.Code" substitutionGroup="xbrli:item" nillable="true" id="DE1926" xbrli:periodType="duration" type="dtyp.02.00:sbrMIMEItemType" block="substitution"/>
+	<xsd:element name="Message.Event.MaximumSeverity.Code" substitutionGroup="xbrli:item" nillable="true" id="DE540" xbrli:periodType="duration" type="dtyp.02.00:sbrBusinessExceptionSeverityCodeItemType" block="substitution"/>
+	<xsd:element name="Message.Event.Item.Detailed.Description" substitutionGroup="xbrli:item" nillable="true" id="DE538" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Message.Event.Item.Error.Code" substitutionGroup="xbrli:item" nillable="true" id="DE536" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Message.Event.Item.LocationPath.Text" substitutionGroup="xbrli:item" nillable="true" id="DE539" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Message.Event.Item.Severity.Code" substitutionGroup="xbrli:item" nillable="true" id="DE535" xbrli:periodType="duration" type="dtyp.02.00:sbrBusinessExceptionSeverityCodeItemType" block="substitution"/>
+	<xsd:element name="Message.Event.Item.Short.Description" substitutionGroup="xbrli:item" nillable="true" id="DE534" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Message.Event.Item.Type.Code" substitutionGroup="xbrli:item" nillable="true" id="DE537" xbrli:periodType="duration" type="dtyp.02.00:sbrBusinessExceptionTypeCodeItemType" block="substitution"/>
+	<xsd:element name="Message.Timestamp.GenerationSource.Code" substitutionGroup="xbrli:item" nillable="true" id="DE1922" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Message.Timestamp.Generation.Datetime" substitutionGroup="xbrli:item" nillable="true" id="DE1921" xbrli:periodType="duration" type="xbrli:dateTimeItemType" block="substitution"/>
+	<xsd:element name="PaymentMechanism.BpayBiller.Code" substitutionGroup="xbrli:item" nillable="true" id="DE137" xbrli:periodType="duration" type="dtyp.02.00:sbrBPayBillerCodeItemType" block="substitution"/>
+	<xsd:element name="PaymentMechanism.CustomerReference.Number" substitutionGroup="xbrli:item" nillable="true" id="DE626" xbrli:periodType="duration" type="dtyp.02.00:sbrGenericNumericItemType" block="substitution"/>
+	<xsd:element name="PaymentMechanism.DirectDebitAccount.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE3135" xbrli:periodType="duration" type="dtyp.02.00:sbrDirectDebitAccountIdentifierItemType" block="substitution"/>
+	<xsd:element name="PaymentMechanism.DirectDebitName.Text" substitutionGroup="xbrli:item" nillable="true" id="DE3134" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="PaymentMechanism.GovernmentAgencyBranch.Code" substitutionGroup="xbrli:item" nillable="true" id="DE627" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="PaymentMechanism.PayableTo.Text" substitutionGroup="xbrli:item" nillable="true" id="DE3133" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="PaymentMechanism.PaymentMethod.Code" substitutionGroup="xbrli:item" nillable="true" id="DE824" xbrli:periodType="duration" type="dtyp.02.00:sbrPaymentMethodCodeItemType" block="substitution"/>
+	<xsd:element name="PaymentMechanism.PaymentReferenceNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE3136" xbrli:periodType="duration" type="dtyp.02.00:sbrPaymentReferenceNumberItemType" block="substitution"/>
+	<xsd:element name="PaymentMechanism.PostBillPay.Code" substitutionGroup="xbrli:item" nillable="true" id="DE3145" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="PaymentMechanism.Reference.Barcode" substitutionGroup="xbrli:item" nillable="true" id="DE3137" xbrli:periodType="duration" type="xbrli:base64BinaryItemType" block="substitution"/>
+	<xsd:element name="PaymentRecord.AgencyGeneratedReference.Number" substitutionGroup="xbrli:item" nillable="true" id="DE825" xbrli:periodType="duration" type="dtyp.02.00:sbrAgencyGeneratedReferenceNumberItemType" block="substitution"/>
+	<xsd:element name="PaymentRecord.ArrangedPayment.Datetime" substitutionGroup="xbrli:item" nillable="true" id="DE911" xbrli:periodType="instant" type="xbrli:dateTimeItemType" block="substitution"/>
+	<xsd:element name="PaymentRecord.ClientIntendedPayment.Date" substitutionGroup="xbrli:item" nillable="true" id="DE814" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="PaymentRecord.Due.Date" substitutionGroup="xbrli:item" nillable="true" id="DE826" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="PaymentRecord.LiabilityPaid.Amount" substitutionGroup="xbrli:item" nillable="true" id="DE392" xbrli:periodType="duration" type="xbrli:monetaryItemType" block="substitution" xbrli:balance="credit"/>
+	<xsd:element name="PaymentRecord.LiabilityPayable.Amount" substitutionGroup="xbrli:item" nillable="true" id="DE393" xbrli:periodType="duration" type="xbrli:monetaryItemType" block="substitution" xbrli:balance="credit"/>
+	<xsd:element name="PaymentRecord.PaymentEffective.Date" substitutionGroup="xbrli:item" nillable="true" id="DE1920" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="PaymentRecord.PaymentExpected.Date" substitutionGroup="xbrli:item" nillable="true" id="DE135" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="PaymentRecord.PaymentReferenceNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE136" xbrli:periodType="duration" type="dtyp.02.00:sbrPaymentReferenceNumberItemType" block="substitution"/>
+	<xsd:element name="PaymentRecord.PaymentStatus.Code" substitutionGroup="xbrli:item" nillable="true" id="DE831" xbrli:periodType="duration" type="dtyp.02.00:sbrPaymentStatusCodeItemType" block="substitution"/>
+	<xsd:element name="PaymentRecord.PaymentType.Text" substitutionGroup="xbrli:item" nillable="true" id="DE828" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="PaymentRecord.Payment.Amount" substitutionGroup="xbrli:item" nillable="true" id="DE827" xbrli:periodType="duration" type="xbrli:monetaryItemType" block="substitution" xbrli:balance="debit"/>
+	<xsd:element name="PaymentRecord.Reference.Barcode" substitutionGroup="xbrli:item" nillable="true" id="DE873" xbrli:periodType="duration" type="xbrli:base64BinaryItemType" block="substitution"/>
+	<xsd:element name="PaymentRecord.Transaction.Date" substitutionGroup="xbrli:item" nillable="true" id="DE712" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="Period.End.Date" substitutionGroup="xbrli:item" nillable="true" id="DE816" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="Period.Start.Date" substitutionGroup="xbrli:item" nillable="true" id="DE815" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="Period.Type.Code" substitutionGroup="xbrli:item" nillable="true" id="DE817" xbrli:periodType="duration" type="dtyp.02.00:sbrPeriodTypeCodeItemType" block="substitution"/>
+	<xsd:element name="Period.Unique.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE915" xbrli:periodType="duration" type="dtyp.02.00:sbrPeriodUniqueIdentifierItemType" block="substitution"/>
+	<xsd:element name="Report.Amendment.Indicator" substitutionGroup="xbrli:item" nillable="true" id="DE706" xbrli:periodType="duration" type="xbrli:booleanItemType" block="substitution"/>
+	<xsd:element name="Report.BusinessTransactionType.Code" substitutionGroup="xbrli:item" nillable="true" id="DE2658" xbrli:periodType="duration" type="dtyp.02.00:sbrBusinessTransactionTypeCodeItemType" block="substitution"/>
+	<xsd:element name="Report.CalendarYearPeriodUsed.Indicator" substitutionGroup="xbrli:item" nillable="true" id="DE316" xbrli:periodType="duration" type="xbrli:booleanItemType" block="substitution"/>
+	<xsd:element name="Report.CompletionHours.Number" substitutionGroup="xbrli:item" nillable="true" id="DE319" xbrli:periodType="duration" type="xbrli:positiveIntegerItemType" block="substitution"/>
+	<xsd:element name="Report.CompletionMinutes.Number" substitutionGroup="xbrli:item" nillable="true" id="DE320" xbrli:periodType="duration" type="xbrli:positiveIntegerItemType" block="substitution"/>
+	<xsd:element name="Report.CriterionType.Code" substitutionGroup="xbrli:item" nillable="true" id="DE3121" xbrli:periodType="duration" type="dtyp.02.00:sbrReportCriterionItemType" block="substitution"/>
+	<xsd:element name="Report.FinancialStatementsAndReportsLodgmentReason.Code" substitutionGroup="xbrli:item" nillable="true" id="DE218" xbrli:periodType="duration" type="dtyp.02.00:sbrFinclStmtRprtLodgReasonCodeItemType" block="substitution"/>
+	<xsd:element name="Report.FinancialYearEnd.Date" substitutionGroup="xbrli:item" nillable="true" id="DE233" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="Report.FinancialYearPeriodUsed.Indicator" substitutionGroup="xbrli:item" nillable="true" id="DE263" xbrli:periodType="duration" type="xbrli:booleanItemType" block="substitution"/>
+	<xsd:element name="Report.FinancialYearStart.Date" substitutionGroup="xbrli:item" nillable="true" id="DE232" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="Report.FormFinalised.Date" substitutionGroup="xbrli:item" nillable="true" id="DE523" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="Report.InstructionalInformation.Text" substitutionGroup="xbrli:item" nillable="true" id="DE376" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Report.ItemOrder.Number" substitutionGroup="xbrli:item" nillable="true" id="DE2230" xbrli:periodType="duration" type="dtyp.02.00:sbrGenericNumericItemType" block="substitution"/>
+	<xsd:element name="Report.Name.Text" substitutionGroup="xbrli:item" nillable="true" id="DE219" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Report.Nature.Code" substitutionGroup="xbrli:item" nillable="true" id="DE2804" xbrli:periodType="duration" type="dtyp.02.00:sbrReportNatureItemType" block="substitution"/>
+	<xsd:element name="Report.OtherPeriodUsed.Indicator" substitutionGroup="xbrli:item" nillable="true" id="DE321" xbrli:periodType="duration" type="xbrli:booleanItemType" block="substitution"/>
+	<xsd:element name="Report.PartyType.Code" substitutionGroup="xbrli:item" nillable="true" id="DE822" xbrli:periodType="duration" type="dtyp.02.00:sbrPartyTypeCodeItemType" block="substitution"/>
+	<xsd:element name="Report.PreFilledPublication.Datetime" substitutionGroup="xbrli:item" nillable="true" id="DE160" xbrli:periodType="instant" type="xbrli:dateTimeItemType" block="substitution"/>
+	<xsd:element name="Report.ProcessStatus.Code" substitutionGroup="xbrli:item" nillable="true" id="DE636" xbrli:periodType="duration" type="dtyp.02.00:sbrStatementProcessStatusItemType" block="substitution"/>
+	<xsd:element name="Report.ReasonNot12Months.Description" substitutionGroup="xbrli:item" nillable="true" id="DE322" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Report.SatisfactionLevel.Code" substitutionGroup="xbrli:item" nillable="true" id="DE880" xbrli:periodType="duration" type="dtyp.02.00:sbrReportSatisfactionLevelItemType" block="substitution"/>
+	<xsd:element name="Report.SpecificationVersion.Number" substitutionGroup="xbrli:item" nillable="true" id="DE917" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Report.Submission.Date" substitutionGroup="xbrli:item" nillable="true" id="DE3155" xbrli:periodType="duration" type="xbrli:dateItemType" block="substitution"/>
+	<xsd:element name="Report.TargetCalendar.Year" substitutionGroup="xbrli:item" nillable="true" id="DE378" xbrli:periodType="duration" type="xbrli:gYearItemType" block="substitution"/>
+	<xsd:element name="Report.TargetFinancial.Year" substitutionGroup="xbrli:item" nillable="true" id="DE377" xbrli:periodType="duration" type="xbrli:gYearItemType" block="substitution"/>
+	<xsd:element name="Report.TransactionType.Code" substitutionGroup="xbrli:item" nillable="true" id="DE872" xbrli:periodType="duration" type="dtyp.02.00:sbrReportTransactionTypeItemType" block="substitution"/>
+	<xsd:element name="Report.TypeVariation.Code" substitutionGroup="xbrli:item" nillable="true" id="DE852" xbrli:periodType="duration" type="dtyp.02.00:sbrReportTypeVariationCodeItemType" block="substitution"/>
+	<xsd:element name="Report.Type.Code" substitutionGroup="xbrli:item" nillable="true" id="DE833" xbrli:periodType="duration" type="dtyp.02.00:sbrReportTypeCodeItemType" block="substitution"/>
+	<xsd:element name="Report.Version.Text" substitutionGroup="xbrli:item" nillable="true" id="DE3146" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Report.Comments.DataSupplied.Text" substitutionGroup="xbrli:item" nillable="true" id="DE317" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Report.Comments.FormComments.Text" substitutionGroup="xbrli:item" nillable="true" id="DE1898" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Report.Comments.ImprovementsForMultipleStateLodgments.Text" substitutionGroup="xbrli:item" nillable="true" id="DE922" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Report.Comments.SuggestedImprovements.Text" substitutionGroup="xbrli:item" nillable="true" id="DE318" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Report.Statement.ConfirmationSynopsis.Text" substitutionGroup="xbrli:item" nillable="true" id="DE637" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Report.Statement.LodgmentAvailableThroughWebService.Indicator" substitutionGroup="xbrli:item" nillable="true" id="DE630" xbrli:periodType="duration" type="xbrli:booleanItemType" block="substitution"/>
+	<xsd:element name="Report.Statement.PeriodSequence.Number" substitutionGroup="xbrli:item" nillable="true" id="DE635" xbrli:periodType="duration" type="dtyp.02.00:sbrStatementPeriodSequenceItemtype" block="substitution"/>
+	<xsd:element name="Report.Statement.Revision.Indicator" substitutionGroup="xbrli:item" nillable="true" id="DE633" xbrli:periodType="duration" type="xbrli:booleanItemType" block="substitution"/>
+	<xsd:element name="Report.Statement.SearchCriteriaGroupStatus.Code" substitutionGroup="xbrli:item" nillable="true" id="DE691" xbrli:periodType="duration" type="dtyp.02.00:sbrStatementSearchCriteriaItemType" block="substitution"/>
+	<xsd:element name="Report.Statement.Summary.Net.Amount" substitutionGroup="xbrli:item" nillable="true" id="DE645" xbrli:periodType="duration" type="xbrli:monetaryItemType" block="substitution"/>
+	<xsd:element name="Report.Statement.Summary.Payable.Amount" substitutionGroup="xbrli:item" nillable="true" id="DE646" xbrli:periodType="duration" type="xbrli:monetaryItemType" block="substitution" xbrli:balance="credit"/>
+	<xsd:element name="Report.Statement.Summary.PaymentRefundOrNil.Code" substitutionGroup="xbrli:item" nillable="true" id="DE644" xbrli:periodType="duration" type="dtyp.02.00:sbrPaymentRefundOrNilItemType" block="substitution"/>
+	<xsd:element name="Report.Statement.Summary.Refundable.Amount" substitutionGroup="xbrli:item" nillable="true" id="DE647" xbrli:periodType="duration" type="xbrli:monetaryItemType" block="substitution" xbrli:balance="debit"/>
+	<xsd:element name="SoftwareInformation.ProductName.Text" substitutionGroup="xbrli:item" nillable="true" id="DE554" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="SoftwareInformation.ProductVersion.Text" substitutionGroup="xbrli:item" nillable="true" id="DE555" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Declaration" abstract="false" substitutionGroup="xbrli:tuple" nillable="true" id="DT142">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="pyin.02.00:Declaration.Signature.Date" minOccurs="0"/>
+				<xsd:element ref="pyin.02.00:Declaration.SignatureSupportedByHardCopy.Indicator" minOccurs="0"/>
+				<xsd:element ref="pyin.02.00:Declaration.StatementAccepted.Indicator"/>
+				<xsd:element ref="pyin.02.00:Declaration.Statement.Text" minOccurs="0"/>
+				<xsd:element ref="pyin.02.00:Declaration.StatementType.Code"/>
+				<xsd:element ref="pyin.02.00:Declaration.SignatoryIdentifier.Text"/>
+			</xsd:sequence>
+			<xsd:attribute name="id" type="xsd:ID" use="optional"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

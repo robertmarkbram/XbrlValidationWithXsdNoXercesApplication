@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xlink:type="simple" xlink:href="../../../fdtn/tech.sbr.01.02.xsd#businessDefinition"/>
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xlink:type="simple" xlink:href="../../../fdtn/tech.sbr.01.02.xsd#dataElementGuidance"/>
+    <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+        <link:loc xlink:type="locator" xlink:href="pyde.02.11.data.xsd#DE12694" xlink:label="loc_DE12694"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12694" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Person Demographic Details Occupation Description</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12694" xlink:to="lbl_DE12694"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12694" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The main salary and wage income-earning occupation an employee undertakes.</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyde.02.11.data.xsd#pyde.02.11_pydeAbstract" xlink:label="loc_pyde.02.11_pydeAbstract"/>
+        <link:label xlink:type="resource" xlink:label="lbl_pydeAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Party Demographics</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_pyde.02.11_pydeAbstract" xlink:to="lbl_pydeAbstract"/>
+        <link:loc xlink:type="locator" xlink:href="pyde.02.11.data.xsd#DE3569" xlink:label="loc_DE3569"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE3569" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">OrganisationDetailsActivityEventCode</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE3569" xlink:to="lbl_DE3569"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE3569" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">It is an indication of the current stage of a business entity life cycle.</link:label>
+        <link:label xlink:type="resource" xlink:label="lbl_DE3569" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xml:lang="en">Valid values are:
+MultipleBusiness = Multiple business
+CeasedBusiness = Ceased business
+CommencedBusiness = Commenced business</link:label>
+    </link:labelLink>
+</link:linkbase>

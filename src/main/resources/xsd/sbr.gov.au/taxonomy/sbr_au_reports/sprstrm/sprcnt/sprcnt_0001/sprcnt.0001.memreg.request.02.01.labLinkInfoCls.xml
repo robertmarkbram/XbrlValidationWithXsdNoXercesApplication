@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/software-developers/developer-tools/sbr-disclaimer-and-conditions-of-use -->
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xlink:type="simple" xlink:href="../../../../sbr_au_taxonomy/fdtn/tech.sbr.01.02.xsd#Label"/>
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/reportGuidance" xlink:type="simple" xlink:href="../../../../sbr_au_taxonomy/fdtn/tech.sbr.01.02.xsd#reportGuidance"/>
+    <link:roleRef roleURI="http://sbr.gov.au/rprt/sprstrm/sprcnt/sprcnt.0001.memreg.request.02.01/labRole" xlink:type="simple" xlink:href="sprcnt.0001.memreg.request.02.01.report.xsd#sprcnt.0001.memreg.request.02.01.labLinkInfoCls"/>
+    <link:labelLink xlink:type="extended" xlink:role="http://sbr.gov.au/rprt/sprstrm/sprcnt/sprcnt.0001.memreg.request.02.01/labRole">
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/py/pyde/pyde.02.00.data.xsd#DE36" xlink:label="loc_DE36"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE36" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Person Demographic Details Birth Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE36" xlink:to="lbl_DE36"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/py/pyde/pyde.02.00.data.xsd#DE57" xlink:label="loc_DE57"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE57" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Person Demographic Details Sex Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE57" xlink:to="lbl_DE57"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.03.data.xsd#DE7396" xlink:label="loc_DE7396"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE7396" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Member Client Identifier</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE7396" xlink:to="lbl_DE7396"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12555" xlink:label="loc_DE12555"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12555" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/reportGuidance" xml:lang="en">Used by Defined Benefit funds in benefit determination</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12555" xlink:to="lbl_DE12555"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12555" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Annual Salary For Contributions Effective End Date</link:label>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12693" xlink:label="loc_DE12693"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12693" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Annual Salary For Insurance Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12693" xlink:to="lbl_DE12693"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12545" xlink:label="loc_DE12545"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12545" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Weekly Hours Worked Number</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12545" xlink:to="lbl_DE12545"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12551" xlink:label="loc_DE12551"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12551" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Insurance Opt Out Indicator</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12551" xlink:to="lbl_DE12551"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12550" xlink:label="loc_DE12550"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12550" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Fund Registration Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12550" xlink:to="lbl_DE12550"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12546" xlink:label="loc_DE12546"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12546" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Benefit Category Text</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12546" xlink:to="lbl_DE12546"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12557" xlink:label="loc_DE12557"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12557" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/reportGuidance" xml:lang="en">Used by Defined Benefit funds in benefit determination</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12557" xlink:to="lbl_DE12557"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12557" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Super Contribution Cease Date</link:label>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12558" xlink:label="loc_DE12558"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12558" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Member Registration Amendment Reason Text</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12558" xlink:to="lbl_DE12558"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12556" xlink:label="loc_DE12556"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12556" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/reportGuidance" xml:lang="en">Used by Defined Benefit funds in benefit determination</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12556" xlink:to="lbl_DE12556"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12556" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Super Contribution Commence Date</link:label>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12727" xlink:label="loc_DE12727"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12727" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Member Registration Other Details Text</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12727" xlink:to="lbl_DE12727"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12728" xlink:label="loc_DE12728"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12728" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Member Registration Other Details Description</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12728" xlink:to="lbl_DE12728"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12729" xlink:label="loc_DE12729"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12729" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Member Registration Other Details Start Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12729" xlink:to="lbl_DE12729"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12730" xlink:label="loc_DE12730"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12730" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Member Registration Other Details End Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12730" xlink:to="lbl_DE12730"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12554" xlink:label="loc_DE12554"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12554" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/reportGuidance" xml:lang="en">Used by Defined Benefit funds in benefit determination</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12554" xlink:to="lbl_DE12554"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12554" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Annual Salary For Contributions Effective Start Date</link:label>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12554" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Annual Salary for Contributions Effective Start Date</link:label>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12540" xlink:label="loc_DE12540"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12540" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Annual Salary For Contributions Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12540" xlink:to="lbl_DE12540"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12541" xlink:label="loc_DE12541"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12541" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Annual Salary For Benefits Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12541" xlink:to="lbl_DE12541"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12544" xlink:label="loc_DE12544"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12544" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details At Work Indicator</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12544" xlink:to="lbl_DE12544"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12695" xlink:label="loc_DE12695"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12695" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Employment End Reason Text</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12695" xlink:to="lbl_DE12695"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE7406" xlink:label="loc_DE7406"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE7406" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Employment End Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE7406" xlink:to="lbl_DE7406"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE7405" xlink:label="loc_DE7405"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE7405" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Superannuation Fund Details Employment Start Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE7405" xlink:to="lbl_DE7405"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/py/pyde/pyde.02.11.data.xsd#DE12694" xlink:label="loc_DE12694"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12694" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Person Demographic Details Occupation Description</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12694" xlink:to="lbl_DE12694"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/py/pyid/pyid.02.05.data.xsd#DE9" xlink:label="loc_DE9"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE9" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Identifiers Employment Payroll Number Identifier</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE9" xlink:to="lbl_DE9"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/py/pyid/pyid.02.05.data.xsd#DE12710" xlink:label="loc_DE12710"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12710" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/reportGuidance" xml:lang="en">FALSE = the member has provided their TFN, TRUE = the member has elected not to provide their TFN</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12710" xlink:to="lbl_DE12710"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12710" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Identifiers Tax File Number Not Provided Indicator</link:label>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/lr/lrla/lrla.02.15.data.xsd#DE12726" xlink:label="loc_DE12726"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12726" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/reportGuidance" xml:lang="en">Casual = employees whose employment status is casual, 
+Contractor = employees whose employment status is as a contractor, 
+Full Time = employees whose employment status is full time, 
+Part Time = employees whose employment status is pull time</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12726" xlink:to="lbl_DE12726"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12726" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Employer Conditions Employment Status Code</link:label>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.memreg.request.02.01.report.xsd#RA4401" xlink:label="loc_RA4401"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RA4401" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">SPRCNTMemregRequest [Abstract]</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RA4401" xlink:to="lbl_RA4401"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.memreg.request.02.01.report.xsd#RT100273" xlink:label="loc_RT100273"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RT100273" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">MemberRegistrationOtherDetails</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RT100273" xlink:to="lbl_RT100273"/>
+        
+        <link:label xlink:type="resource" xlink:label="lbl_RT100274" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">MemberRegistrationOtherDetails</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RT100273" xlink:to="lbl_RT100274"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.memreg.request.02.01.report.xsd#RA100275" xlink:label="loc_RA100275"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RA100275" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">MessageSender Primary Items [Abstract]</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RA100275" xlink:to="lbl_RA100275"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.memreg.request.02.01.report.xsd#RA100276" xlink:label="loc_RA100276"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RA100276" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">MessageReceiver Primary Items [Abstract]</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RA100276" xlink:to="lbl_RA100276"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.memreg.request.02.01.report.xsd#RA100277" xlink:label="loc_RA100277"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RA100277" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Employer Primary Items [Abstract]</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RA100277" xlink:to="lbl_RA100277"/>
+        <link:loc xlink:type="locator" xlink:href="sprcnt.0001.memreg.request.02.01.report.xsd#RA100278" xlink:label="loc_RA100278"/>
+        <link:label xlink:type="resource" xlink:label="lbl_RA100278" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">SuperFundMember Primary Items [Abstract]</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RA100278" xlink:to="lbl_RA100278"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/py/pyid/pyid.02.06.data.xsd#DE12711" xlink:label="loc_DE12711"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12711" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/reportGuidance" xml:lang="en">The identifier has been created by the superannuation fund for the purpose of uniquely identifying the employer in the superannuation fund's systems.  It will generally not be known by any other party.</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12711" xlink:to="lbl_DE12711"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12711" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" xml:lang="en">Identifiers Superannuation Fund Generated Employer Identifier</link:label>
+    </link:labelLink>
+</link:linkbase>

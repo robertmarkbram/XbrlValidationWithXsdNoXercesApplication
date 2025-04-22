@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Dislcaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:tech.01.02="http://sbr.gov.au/fdtn/sbr.01.02.tech" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sbr.gov.au/fdtn/sbr.01.02.tech" elementFormDefault="qualified">
+	<xsd:annotation>
+		<!-- Standard extended link role -->
+		<xsd:appinfo>
+			<link:roleType roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" id="businessDefinition">
+				<link:definition>Business Definition</link:definition>
+				<link:usedOn>link:label</link:usedOn>
+			</link:roleType>
+		</xsd:appinfo>
+		<xsd:appinfo>
+			<link:roleType roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" id="dataElementGuidance">
+				<link:definition>Data Element Guidance</link:definition>
+				<link:usedOn>link:label</link:usedOn>
+			</link:roleType>
+		</xsd:appinfo>
+		<xsd:appinfo>
+			<link:roleType roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/label" id="label">
+				<link:definition>Data Element Label</link:definition>
+				<link:usedOn>link:label</link:usedOn>
+			</link:roleType>
+		</xsd:appinfo>
+		<xsd:appinfo>
+			<link:roleType roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/legalReference" id="legalReference">
+				<link:definition>Legal Reference</link:definition>
+				<link:usedOn>link:reference</link:usedOn>
+			</link:roleType>
+		</xsd:appinfo>
+		<xsd:appinfo>
+			<link:roleType roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/industryStandardReference" id="industryStandardReference">
+				<link:definition>Industry Standard Reference</link:definition>
+				<link:usedOn>link:reference</link:usedOn>
+			</link:roleType>
+		</xsd:appinfo>
+		<xsd:appinfo>
+			<link:roleType roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/Label" id="Label">
+				<link:definition>Intermediary Label</link:definition>
+				<link:usedOn>link:label</link:usedOn>
+			</link:roleType>
+		</xsd:appinfo>
+		<xsd:appinfo>
+			<link:roleType roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt/reportGuidance" id="reportGuidance">
+				<link:definition>Report Guidance</link:definition>
+				<link:usedOn>link:label</link:usedOn>
+			</link:roleType>
+		</xsd:appinfo>
+
+		<!-- Report level extended link role -->
+		<xsd:appinfo>
+			<link:roleType roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/rprt" id="sbrReportLabel">
+				<link:definition>SBR Report Level Labels</link:definition>
+				<link:usedOn>link:labelLink</link:usedOn>
+			</link:roleType>
+		</xsd:appinfo>
+		<xsd:appinfo>
+			<link:roleType roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/icls" id="icls">
+				<link:definition>SBR AU Taxonomy</link:definition>
+				<link:usedOn>link:presentationLink</link:usedOn>
+			</link:roleType>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<xsd:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+	<xsd:element name="FullReferenceText" type="xsd:string" substitutionGroup="link:part"/>
+	<xsd:element name="Act" type="xsd:string" substitutionGroup="link:part"/>
+	<xsd:element name="ActYear" type="xsd:string" substitutionGroup="link:part"/>
+	<xsd:element name="Schedule" type="xsd:string" substitutionGroup="link:part"/>
+	<xsd:element name="Chapter" type="xsd:string" substitutionGroup="link:part"/>
+	<xsd:element name="Part" type="xsd:string" substitutionGroup="link:part"/>
+	<xsd:element name="Division" type="xsd:string" substitutionGroup="link:part"/>
+	<xsd:element name="Subdivision" type="xsd:string" substitutionGroup="link:part"/>
+	<xsd:element name="Section" type="xsd:string" substitutionGroup="link:part"/>
+	<xsd:element name="Sub-Section" type="xsd:string" substitutionGroup="link:part"/>
+	<xsd:element name="Paragraph" type="xsd:string" substitutionGroup="link:part"/>
+	<xsd:element name="StandardReference" type="xsd:string" substitutionGroup="link:part"/>
+	<xsd:element name="StandardName" type="xsd:string" substitutionGroup="link:part"/>
+</xsd:schema>

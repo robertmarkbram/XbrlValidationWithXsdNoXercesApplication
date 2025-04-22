@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dtyp.02.00="http://sbr.gov.au/fdtn/sbr.02.00.dtyp" xmlns:pyid.02.00="http://sbr.gov.au/icls/py/pyid/pyid.02.00.data" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://sbr.gov.au/icls/py/pyid/pyid.02.00.data" elementFormDefault="qualified">
+	<xsd:annotation>
+		<xsd:appinfo>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:import namespace="http://sbr.gov.au/fdtn/sbr.01.02.tech" schemaLocation="../../../fdtn/tech.sbr.01.02.xsd" />
+	<xsd:import namespace="http://sbr.gov.au/fdtn/sbr.02.00.dtyp" schemaLocation="../../../fdtn/dtyp.sbr.02.00.xsd" />
+	<xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<xsd:element name="pyidAbstract" id="pyid.02.00_pyidAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+	<xsd:element name="ElectronicFundsTransferDetails.ClientInitiatedAccountForPayment.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE912" xbrli:periodType="duration" type="dtyp.02.00:sbrDirectDebitAccountIdentifierItemType" block="substitution"/>
+	<xsd:element name="ElectronicFundsTransferDetails.PaymentReference.Number" substitutionGroup="xbrli:item" nillable="true" id="DE829" xbrli:periodType="duration" type="dtyp.02.00:sbrEftPaymentReferenceNumberItemType" block="substitution"/>
+	<xsd:element name="FinancialInstitutionAccount.BankStateBranch.Number" substitutionGroup="xbrli:item" nillable="true" id="DE156" xbrli:periodType="duration" type="dtyp.02.00:sbrBankServiceBranchCodeItemType" block="substitution"/>
+	<xsd:element name="FinancialInstitutionAccount.eLockboxAccount.Number" substitutionGroup="xbrli:item" nillable="true" id="DE910" xbrli:periodType="duration" type="dtyp.02.00:sbrFinancialInstitutionAccountNumberItemType" block="substitution"/>
+	<xsd:element name="FinancialInstitutionAccount.FinancialInstitutionAccountName.Text" substitutionGroup="xbrli:item" nillable="true" id="DE158" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="FinancialInstitutionAccount.FinancialInstitutionAccount.Number" substitutionGroup="xbrli:item" nillable="true" id="DE157" xbrli:periodType="duration" type="dtyp.02.00:sbrFinancialInstitutionAccountNumberItemType" block="substitution"/>
+	<xsd:element name="FinancialInstitutionAccount.FinancialInstitutionBranchName.Text" substitutionGroup="xbrli:item" nillable="true" id="DE155" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="FinancialInstitutionAccount.FinancialInstitutionName.Text" substitutionGroup="xbrli:item" nillable="true" id="DE154" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="IdentificationDetails.IdentifierDesignation.Text" substitutionGroup="xbrli:item" nillable="true" id="DE98" xbrli:periodType="duration" type="dtyp.02.00:sbrIdentifierDesignationItemType" block="substitution"/>
+	<xsd:element name="IdentificationDetails.IdentifierIssuer.Text" substitutionGroup="xbrli:item" nillable="true" id="DE100" xbrli:periodType="duration" type="dtyp.02.00:sbrIdentifierIssuerItemType" block="substitution"/>
+	<xsd:element name="IdentificationDetails.IdentifierName.Text" substitutionGroup="xbrli:item" nillable="true" id="DE99" xbrli:periodType="duration" type="dtyp.02.00:sbrIdentifierNameItemType" block="substitution"/>
+	<xsd:element name="IdentificationDetails.IdentifierStatusEnd.Date" substitutionGroup="xbrli:item" nillable="true" id="DE103" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="IdentificationDetails.IdentifierStatusStart.Date" substitutionGroup="xbrli:item" nillable="true" id="DE102" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="IdentificationDetails.IdentifierStatus.Code" substitutionGroup="xbrli:item" nillable="true" id="DE101" xbrli:periodType="duration" type="dtyp.02.00:sbrIdentifierStatusCodeItemType" block="substitution"/>
+	<xsd:element name="IdentificationExemptionDetails.TFNExemptionType.Code" substitutionGroup="xbrli:item" nillable="true" id="DE30" xbrli:periodType="duration" type="dtyp.02.00:sbrTFNExemptionCodeItemType" block="substitution"/>
+	<xsd:element name="Identifiers.AustralianBureauofStatisticsUnit.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE375" xbrli:periodType="duration" type="dtyp.02.00:sbrABSUnitIdentifierItemType" block="substitution"/>
+	<xsd:element name="Identifiers.AustralianBusinessNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE26" xbrli:periodType="duration" type="dtyp.02.00:sbrAustralianBusinessNumberItemType" block="substitution"/>
+	<xsd:element name="Identifiers.AustralianCompanyNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE384" xbrli:periodType="duration" type="dtyp.02.00:sbrAustralianCompanyNumberItemType" block="substitution"/>
+	<xsd:element name="Identifiers.AustralianFinancialServicesLicenseeNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE1603" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Identifiers.AustralianRegisteredBodyNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE385" xbrli:periodType="duration" type="dtyp.02.00:sbrAustralianRegisteredBodyNumberItemType" block="substitution"/>
+	<xsd:element name="Identifiers.AustralianRegisteredSchemeNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE386" xbrli:periodType="duration" type="dtyp.02.00:sbrAustralianRegisteredSchemeNumberItemType" block="substitution"/>
+	<xsd:element name="Identifiers.AustralianSecuritiesAndInvestmentsCommissionAgentNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE391" xbrli:periodType="duration" type="dtyp.02.00:sbrASICAgentNumberItemType" block="substitution"/>
+	<xsd:element name="Identifiers.DesignatedGroupSingleLodger.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE770" xbrli:periodType="duration" type="dtyp.02.00:sbrDesignatedGroupSingleLodgerItemType" block="substitution"/>
+	<xsd:element name="Identifiers.InnovationRegistrationNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE1901" xbrli:periodType="duration" type="dtyp.02.00:sbrInnovationRegistrationNumberItemType" block="substitution"/>
+	<xsd:element name="Identifiers.PayrollTaxGroup.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE765" xbrli:periodType="duration" type="dtyp.02.00:sbrPayrollTaxGroupItemType" block="substitution"/>
+	<xsd:element name="Identifiers.RegisteredAuditorNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE388" xbrli:periodType="duration" type="dtyp.02.00:sbrRegisteredAuditorNumberItemType" block="substitution"/>
+	<xsd:element name="Identifiers.StateOrTerritoryBusinessRegistrationNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE2521" xbrli:periodType="duration" type="dtyp.02.00:sbrStateOrTerritoryBusinessRegistrationNumberItemType" block="substitution"/>
+	<xsd:element name="Identifiers.StateRevenueOfficeClientNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE763" xbrli:periodType="duration" type="dtyp.02.00:sbrOsrClientNumberItemType" block="substitution"/>
+	<xsd:element name="Identifiers.TaxAgentClientReference.Text" substitutionGroup="xbrli:item" nillable="true" id="DE1641" xbrli:periodType="duration" type="xbrli:stringItemType" block="substitution"/>
+	<xsd:element name="Identifiers.TaxAgentNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE217" xbrli:periodType="duration" type="dtyp.02.00:sbrTaxAgentNumberItemType" block="substitution"/>
+	<xsd:element name="Identifiers.TaxFileNumberInexistent.Indicator" substitutionGroup="xbrli:item" nillable="true" id="DE2501" xbrli:periodType="duration" type="xbrli:booleanItemType" block="substitution"/>
+	<xsd:element name="Identifiers.TaxFileNumberTrailingNumeric.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE1853" xbrli:periodType="duration" type="dtyp.02.00:sbrGenericNumericItemType" block="substitution"/>
+	<xsd:element name="Identifiers.TaxFileNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE27" xbrli:periodType="duration" type="dtyp.02.00:sbrTaxFileNumberItemType" block="substitution"/>
+	<xsd:element name="Identifiers.TaxIdentificationNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE725" xbrli:periodType="duration" type="dtyp.02.00:sbrTaxIdentificationNumberItemType" block="substitution"/>
+	<xsd:element name="Identifiers.TaxOfficeCorporateGatewayUser.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE28" xbrli:periodType="duration" type="dtyp.02.00:sbrATOCorporateGatewayUserIDItemType" block="substitution"/>
+	<xsd:element name="Identifiers.TerritoryRevenueSystem.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE876" xbrli:periodType="duration" type="dtyp.02.00:sbrTerritoryRevenueSystemCodeItemType" block="substitution"/>
+	<xsd:element name="Identifiers.Usage.Code" substitutionGroup="xbrli:item" nillable="true" id="DE1596" xbrli:periodType="duration" type="dtyp.02.00:sbrIdentifierUsageCodeItemType" block="substitution"/>
+	<xsd:element name="Identifiers.WithholdingPayerNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE29" xbrli:periodType="duration" type="dtyp.02.00:sbrWithholderPayerNumberItemType" block="substitution"/>
+	<xsd:element name="Identifiers.WorkcoverEmploymentNumber.Identifier" substitutionGroup="xbrli:item" nillable="true" id="DE764" xbrli:periodType="duration" type="dtyp.02.00:sbrWorkcoverEmploymentNumberItemType" block="substitution"/>
+	<xsd:element name="IdentificationDetails" abstract="false" substitutionGroup="xbrli:tuple" nillable="true" id="DT160">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="pyid.02.00:IdentificationDetails.IdentifierDesignation.Text" maxOccurs="unbounded"/>
+				<xsd:element ref="pyid.02.00:IdentificationDetails.IdentifierName.Text" maxOccurs="unbounded"/>
+				<xsd:element ref="pyid.02.00:IdentificationDetails.IdentifierIssuer.Text" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="pyid.02.00:IdentificationDetails.IdentifierStatus.Code" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="pyid.02.00:IdentificationDetails.IdentifierStatusStart.Date" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="pyid.02.00:IdentificationDetails.IdentifierStatusEnd.Date" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+			<xsd:attribute name="id" type="xsd:ID" use="optional"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

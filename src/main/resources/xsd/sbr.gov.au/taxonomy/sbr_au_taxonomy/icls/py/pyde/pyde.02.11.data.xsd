@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pyde.02.11="http://sbr.gov.au/icls/py/pyde/pyde.02.11.data" xmlns:dtyp.02.16="http://sbr.gov.au/fdtn/sbr.02.16.dtyp" xmlns:tech.01.02="http://sbr.gov.au/fdtn/sbr.01.02.tech" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://sbr.gov.au/icls/py/pyde/pyde.02.11.data" elementFormDefault="qualified">
+    <xsd:import namespace="http://sbr.gov.au/fdtn/sbr.02.16.dtyp" schemaLocation="../../../fdtn/dtyp.sbr.02.16.xsd"/>
+    <xsd:import namespace="http://sbr.gov.au/fdtn/sbr.01.02.tech" schemaLocation="../../../fdtn/tech.sbr.01.02.xsd"/>
+    <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+    <xsd:element name="pydeAbstract" id="pyde.02.11_pydeAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="OrganisationDetails.ActivityEvent.Code" id="DE3569" type="dtyp.02.16:sbrOrganisationActivityEventCodeItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+    <xsd:element name="PersonDemographicDetails.Occupation.Description" id="DE12694" type="xbrli:stringItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+</xsd:schema>

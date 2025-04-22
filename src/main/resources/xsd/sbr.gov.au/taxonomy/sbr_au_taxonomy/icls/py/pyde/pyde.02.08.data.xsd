@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pyde.02.08="http://sbr.gov.au/icls/py/pyde/pyde.02.08.data" xmlns:tech.01.02="http://sbr.gov.au/fdtn/sbr.01.02.tech" xmlns:dtyp.02.13="http://sbr.gov.au/fdtn/sbr.02.13.dtyp" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pyde.02.00="http://sbr.gov.au/icls/py/pyde/pyde.02.00.data" xmlns:pyde.02.01="http://sbr.gov.au/icls/py/pyde/pyde.02.01.data" targetNamespace="http://sbr.gov.au/icls/py/pyde/pyde.02.08.data" elementFormDefault="qualified">
+	<xsd:import namespace="http://sbr.gov.au/fdtn/sbr.02.13.dtyp" schemaLocation="../../../fdtn/dtyp.sbr.02.13.xsd"/>
+	<xsd:import namespace="http://sbr.gov.au/fdtn/sbr.01.02.tech" schemaLocation="../../../fdtn/tech.sbr.01.02.xsd"/>
+	<xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<xsd:import namespace="http://sbr.gov.au/icls/py/pyde/pyde.02.00.data" schemaLocation="pyde.02.00.data.xsd"/>
+	<xsd:import namespace="http://sbr.gov.au/icls/py/pyde/pyde.02.01.data" schemaLocation="pyde.02.01.data.xsd"/>
+	<xsd:element name="pydeAbstract" id="pyde.02.08_pydeAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+	<xsd:element name="AddressDetails.Country.Code" id="DE15" type="dtyp.02.13:sbrCountryNameCodeItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+	<xsd:element name="AddressDetails.CountryName.Text" id="DE528" type="dtyp.02.13:sbrCountryNameItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+	<xsd:element name="OrganisationDetails.InternationalRelatedPartyCountry.Code" id="DE4867" type="dtyp.02.13:sbrCountryNameCodeItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+	<xsd:element name="Party.AuditorProfessionalBody.Code" id="DE4032" type="dtyp.02.13:sbrAuditorProfessionalBodyTypeItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+	<xsd:element name="PersonDemographicDetails.BirthCountry.Code" id="DE58" type="dtyp.02.13:sbrCountryNameCodeItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+	<xsd:element name="PersonDemographicDetails.CitizenshipCountry.Code" id="DE59" type="dtyp.02.13:sbrCountryNameCodeItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+	<xsd:element name="Residency.TaxPurposesCountry.Code" id="DE727" type="dtyp.02.13:sbrCountryNameCodeItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+</xsd:schema>

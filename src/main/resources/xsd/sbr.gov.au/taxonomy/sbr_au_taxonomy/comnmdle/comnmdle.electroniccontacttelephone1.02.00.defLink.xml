@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:roleRef roleURI="http://sbr.gov.au/comnmdle/comnmdle.electroniccontacttelephone1.02.00/defRole" xlink:type="simple" xlink:href="comnmdle.electroniccontacttelephone1.02.00.module.xsd#comnmdle.electroniccontacttelephone1defLink"/>
+  <link:definitionLink xlink:type="extended" xlink:role="http://sbr.gov.au/comnmdle/comnmdle.electroniccontacttelephone1.02.00/defRole">
+    <link:loc xlink:type="locator" xlink:href="../icls/py/pyde/pyde.02.00.data.xsd#DT145" xlink:label="DT145"/>
+    <link:loc xlink:type="locator" xlink:href="comnmdle.electroniccontacttelephone1.02.00.module.xsd#RT511" xlink:label="loc_RT511"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/similar-tuples" xlink:from="DT145" xlink:to="loc_RT511" order="1.0"/>
+  </link:definitionLink>
+</link:linkbase>

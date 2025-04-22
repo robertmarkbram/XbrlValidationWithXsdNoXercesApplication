@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/software-developers/developer-tools/sbr-disclaimer-and-conditions-of-use -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:RprtPyType.02.07="http://sbr.gov.au/dims/RprtPyType.02.07.dims" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://sbr.gov.au/dims/RprtPyType.02.07.dims" elementFormDefault="qualified">
+    <xsd:annotation>
+        <xsd:appinfo>
+            <link:linkbaseRef xlink:type="simple" xlink:href="RprtPyType.02.07.labLink.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+        </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+    <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+    <xsd:element name="Payee" id="DV541" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="MessageSender" id="DV5947" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="MessageReceiver" id="DV5948" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="TransferringFund" id="DV5949" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="SuperFundMember" id="DV5950" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="Employer" id="DV5951" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="NotForProfit" id="DV5970" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="AcquiringEntity" id="DV148" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="TrusteeOrPartner" id="DV156" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="Intermediary" id="DV30" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="ReportingParty" id="DV29" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="Auditor" id="DV37" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="GovernmentAgency" id="DV32" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="Payer" id="DV153" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="Investor" id="DV151" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="GroupMember" id="DV150" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="JoiningEntity" id="DV152" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="Transferor" id="DV155" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="SpecifiedIndividual" id="DV154" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="FamilyTrust" id="DV149" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="LocalAgent" id="DV157" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="ResponsibleEntity" id="DV31" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="Administrator" id="DV38" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="ConsolidatedParty" id="DV43" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="Employee" id="DV6216" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="ReportPartyTypeDimension" id="DM5" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" xbrli:periodType="instant"/>
+</xsd:schema>

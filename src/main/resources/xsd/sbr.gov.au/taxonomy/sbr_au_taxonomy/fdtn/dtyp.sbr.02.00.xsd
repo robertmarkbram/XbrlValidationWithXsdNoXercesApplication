@@ -1,0 +1,2522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Dislcaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer 
+
+	Detailed below are the changes which have been made to the data type schema as of the 27th August 2010:
+
+	DATA TYPE																		CHANGE
+	dtyp.sbr.02.00:sbrPersonNameUsageItemType 					addition of enumeration value 'DeclarationSignatory'
+	dtyp.sbr.02.04:sbrResearchDevelopmentGroupItemType 		addition of enumeration values 'G' and 'B'
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dtyp.02.00="http://sbr.gov.au/fdtn/sbr.02.00.dtyp" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://sbr.gov.au/fdtn/sbr.02.00.dtyp" elementFormDefault="qualified">
+	<xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<xsd:complexType name="sbrStateOrTerritoryItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="ACT"/>
+				<xsd:enumeration value="NSW"/>
+				<xsd:enumeration value="NT"/>
+				<xsd:enumeration value="TAS"/>
+				<xsd:enumeration value="AAT"/>
+				<xsd:enumeration value="QLD"/>
+				<xsd:enumeration value="SA"/>
+				<xsd:enumeration value="VIC"/>
+				<xsd:enumeration value="WA"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrAddressCurrencyItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="P"/>
+				<xsd:enumeration value="C"/>
+				<xsd:enumeration value="F"/>
+				<xsd:enumeration value="T"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrAddressStatusItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="OFF"/>
+				<xsd:enumeration value="VAL"/>
+				<xsd:enumeration value="INV"/>
+				<xsd:enumeration value="OBS"/>
+				<xsd:enumeration value="UNK"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrAddressUsageItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="RES"/>
+				<xsd:enumeration value="TEM"/>
+				<xsd:enumeration value="BUS"/>
+				<xsd:enumeration value="DEL"/>
+				<xsd:enumeration value="POS"/>
+				<xsd:enumeration value="CNT"/>
+				<xsd:enumeration value="PMT"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrCountryNameCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="af"/>
+				<xsd:enumeration value="ax"/>
+				<xsd:enumeration value="al"/>
+				<xsd:enumeration value="dz"/>
+				<xsd:enumeration value="as"/>
+				<xsd:enumeration value="ad"/>
+				<xsd:enumeration value="ao"/>
+				<xsd:enumeration value="ai"/>
+				<xsd:enumeration value="aq"/>
+				<xsd:enumeration value="ag"/>
+				<xsd:enumeration value="ar"/>
+				<xsd:enumeration value="am"/>
+				<xsd:enumeration value="aw"/>
+				<xsd:enumeration value="au"/>
+				<xsd:enumeration value="at"/>
+				<xsd:enumeration value="az"/>
+				<xsd:enumeration value="bs"/>
+				<xsd:enumeration value="bh"/>
+				<xsd:enumeration value="bd"/>
+				<xsd:enumeration value="bb"/>
+				<xsd:enumeration value="by"/>
+				<xsd:enumeration value="be"/>
+				<xsd:enumeration value="bz"/>
+				<xsd:enumeration value="bj"/>
+				<xsd:enumeration value="bm"/>
+				<xsd:enumeration value="bt"/>
+				<xsd:enumeration value="bo"/>
+				<xsd:enumeration value="ba"/>
+				<xsd:enumeration value="bw"/>
+				<xsd:enumeration value="bv"/>
+				<xsd:enumeration value="br"/>
+				<xsd:enumeration value="io"/>
+				<xsd:enumeration value="bn"/>
+				<xsd:enumeration value="bg"/>
+				<xsd:enumeration value="bf"/>
+				<xsd:enumeration value="bi"/>
+				<xsd:enumeration value="kh"/>
+				<xsd:enumeration value="cm"/>
+				<xsd:enumeration value="ca"/>
+				<xsd:enumeration value="cv"/>
+				<xsd:enumeration value="ky"/>
+				<xsd:enumeration value="cf"/>
+				<xsd:enumeration value="td"/>
+				<xsd:enumeration value="cl"/>
+				<xsd:enumeration value="cn"/>
+				<xsd:enumeration value="cx"/>
+				<xsd:enumeration value="cc"/>
+				<xsd:enumeration value="co"/>
+				<xsd:enumeration value="km"/>
+				<xsd:enumeration value="cg"/>
+				<xsd:enumeration value="cd"/>
+				<xsd:enumeration value="ck"/>
+				<xsd:enumeration value="cr"/>
+				<xsd:enumeration value="ci"/>
+				<xsd:enumeration value="hr"/>
+				<xsd:enumeration value="cu"/>
+				<xsd:enumeration value="cy"/>
+				<xsd:enumeration value="cz"/>
+				<xsd:enumeration value="dk"/>
+				<xsd:enumeration value="dj"/>
+				<xsd:enumeration value="dm"/>
+				<xsd:enumeration value="do"/>
+				<xsd:enumeration value="ec"/>
+				<xsd:enumeration value="eg"/>
+				<xsd:enumeration value="sv"/>
+				<xsd:enumeration value="gq"/>
+				<xsd:enumeration value="er"/>
+				<xsd:enumeration value="ee"/>
+				<xsd:enumeration value="et"/>
+				<xsd:enumeration value="fk"/>
+				<xsd:enumeration value="fo"/>
+				<xsd:enumeration value="fj"/>
+				<xsd:enumeration value="fi"/>
+				<xsd:enumeration value="fr"/>
+				<xsd:enumeration value="gf"/>
+				<xsd:enumeration value="pf"/>
+				<xsd:enumeration value="tf"/>
+				<xsd:enumeration value="ga"/>
+				<xsd:enumeration value="gm"/>
+				<xsd:enumeration value="ge"/>
+				<xsd:enumeration value="de"/>
+				<xsd:enumeration value="gh"/>
+				<xsd:enumeration value="gi"/>
+				<xsd:enumeration value="gr"/>
+				<xsd:enumeration value="gl"/>
+				<xsd:enumeration value="gd"/>
+				<xsd:enumeration value="gp"/>
+				<xsd:enumeration value="gu"/>
+				<xsd:enumeration value="gt"/>
+				<xsd:enumeration value="gg"/>
+				<xsd:enumeration value="gn"/>
+				<xsd:enumeration value="gw"/>
+				<xsd:enumeration value="gy"/>
+				<xsd:enumeration value="ht"/>
+				<xsd:enumeration value="hm"/>
+				<xsd:enumeration value="va"/>
+				<xsd:enumeration value="hn"/>
+				<xsd:enumeration value="hk"/>
+				<xsd:enumeration value="hu"/>
+				<xsd:enumeration value="is"/>
+				<xsd:enumeration value="in"/>
+				<xsd:enumeration value="id"/>
+				<xsd:enumeration value="ir"/>
+				<xsd:enumeration value="iq"/>
+				<xsd:enumeration value="ie"/>
+				<xsd:enumeration value="im"/>
+				<xsd:enumeration value="il"/>
+				<xsd:enumeration value="it"/>
+				<xsd:enumeration value="jm"/>
+				<xsd:enumeration value="jp"/>
+				<xsd:enumeration value="je"/>
+				<xsd:enumeration value="jo"/>
+				<xsd:enumeration value="kz"/>
+				<xsd:enumeration value="ke"/>
+				<xsd:enumeration value="ki"/>
+				<xsd:enumeration value="kp"/>
+				<xsd:enumeration value="kr"/>
+				<xsd:enumeration value="kw"/>
+				<xsd:enumeration value="kg"/>
+				<xsd:enumeration value="la"/>
+				<xsd:enumeration value="lv"/>
+				<xsd:enumeration value="lb"/>
+				<xsd:enumeration value="ls"/>
+				<xsd:enumeration value="lr"/>
+				<xsd:enumeration value="ly"/>
+				<xsd:enumeration value="li"/>
+				<xsd:enumeration value="lt"/>
+				<xsd:enumeration value="lu"/>
+				<xsd:enumeration value="mo"/>
+				<xsd:enumeration value="mk"/>
+				<xsd:enumeration value="mg"/>
+				<xsd:enumeration value="mw"/>
+				<xsd:enumeration value="my"/>
+				<xsd:enumeration value="mv"/>
+				<xsd:enumeration value="ml"/>
+				<xsd:enumeration value="mt"/>
+				<xsd:enumeration value="mh"/>
+				<xsd:enumeration value="mq"/>
+				<xsd:enumeration value="mr"/>
+				<xsd:enumeration value="mu"/>
+				<xsd:enumeration value="yt"/>
+				<xsd:enumeration value="mx"/>
+				<xsd:enumeration value="fm"/>
+				<xsd:enumeration value="md"/>
+				<xsd:enumeration value="mc"/>
+				<xsd:enumeration value="mn"/>
+				<xsd:enumeration value="me"/>
+				<xsd:enumeration value="ms"/>
+				<xsd:enumeration value="ma"/>
+				<xsd:enumeration value="mz"/>
+				<xsd:enumeration value="mm"/>
+				<xsd:enumeration value="na"/>
+				<xsd:enumeration value="nr"/>
+				<xsd:enumeration value="np"/>
+				<xsd:enumeration value="nl"/>
+				<xsd:enumeration value="an"/>
+				<xsd:enumeration value="nc"/>
+				<xsd:enumeration value="nz"/>
+				<xsd:enumeration value="ni"/>
+				<xsd:enumeration value="ne"/>
+				<xsd:enumeration value="ng"/>
+				<xsd:enumeration value="nu"/>
+				<xsd:enumeration value="nf"/>
+				<xsd:enumeration value="mp"/>
+				<xsd:enumeration value="no"/>
+				<xsd:enumeration value="om"/>
+				<xsd:enumeration value="pk"/>
+				<xsd:enumeration value="pw"/>
+				<xsd:enumeration value="ps"/>
+				<xsd:enumeration value="pa"/>
+				<xsd:enumeration value="pg"/>
+				<xsd:enumeration value="py"/>
+				<xsd:enumeration value="pe"/>
+				<xsd:enumeration value="ph"/>
+				<xsd:enumeration value="pn"/>
+				<xsd:enumeration value="pl"/>
+				<xsd:enumeration value="pt"/>
+				<xsd:enumeration value="pr"/>
+				<xsd:enumeration value="qa"/>
+				<xsd:enumeration value="re"/>
+				<xsd:enumeration value="ro"/>
+				<xsd:enumeration value="ru"/>
+				<xsd:enumeration value="rw"/>
+				<xsd:enumeration value="bl"/>
+				<xsd:enumeration value="sh"/>
+				<xsd:enumeration value="kn"/>
+				<xsd:enumeration value="lc"/>
+				<xsd:enumeration value="mf"/>
+				<xsd:enumeration value="pm"/>
+				<xsd:enumeration value="vc"/>
+				<xsd:enumeration value="ws"/>
+				<xsd:enumeration value="sm"/>
+				<xsd:enumeration value="st"/>
+				<xsd:enumeration value="sa"/>
+				<xsd:enumeration value="sn"/>
+				<xsd:enumeration value="rs"/>
+				<xsd:enumeration value="sc"/>
+				<xsd:enumeration value="sl"/>
+				<xsd:enumeration value="sg"/>
+				<xsd:enumeration value="sk"/>
+				<xsd:enumeration value="si"/>
+				<xsd:enumeration value="sb"/>
+				<xsd:enumeration value="so"/>
+				<xsd:enumeration value="za"/>
+				<xsd:enumeration value="gs"/>
+				<xsd:enumeration value="es"/>
+				<xsd:enumeration value="lk"/>
+				<xsd:enumeration value="sd"/>
+				<xsd:enumeration value="sr"/>
+				<xsd:enumeration value="sj"/>
+				<xsd:enumeration value="sz"/>
+				<xsd:enumeration value="se"/>
+				<xsd:enumeration value="ch"/>
+				<xsd:enumeration value="sy"/>
+				<xsd:enumeration value="tw"/>
+				<xsd:enumeration value="tj"/>
+				<xsd:enumeration value="tz"/>
+				<xsd:enumeration value="th"/>
+				<xsd:enumeration value="tl"/>
+				<xsd:enumeration value="tg"/>
+				<xsd:enumeration value="tk"/>
+				<xsd:enumeration value="to"/>
+				<xsd:enumeration value="tt"/>
+				<xsd:enumeration value="tn"/>
+				<xsd:enumeration value="tr"/>
+				<xsd:enumeration value="tm"/>
+				<xsd:enumeration value="tc"/>
+				<xsd:enumeration value="tv"/>
+				<xsd:enumeration value="ug"/>
+				<xsd:enumeration value="ua"/>
+				<xsd:enumeration value="ae"/>
+				<xsd:enumeration value="gb"/>
+				<xsd:enumeration value="us"/>
+				<xsd:enumeration value="um"/>
+				<xsd:enumeration value="uy"/>
+				<xsd:enumeration value="uz"/>
+				<xsd:enumeration value="vu"/>
+				<xsd:enumeration value="ve"/>
+				<xsd:enumeration value="vn"/>
+				<xsd:enumeration value="vg"/>
+				<xsd:enumeration value="vi"/>
+				<xsd:enumeration value="wf"/>
+				<xsd:enumeration value="eh"/>
+				<xsd:enumeration value="ye"/>
+				<xsd:enumeration value="zm"/>
+				<xsd:enumeration value="zw"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrCountryNameItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="afghanistan"/>
+				<xsd:enumeration value="aland islands"/>
+				<xsd:enumeration value="albania"/>
+				<xsd:enumeration value="algeria"/>
+				<xsd:enumeration value="american samoa"/>
+				<xsd:enumeration value="andorra"/>
+				<xsd:enumeration value="angola"/>
+				<xsd:enumeration value="anguilla"/>
+				<xsd:enumeration value="antarctica"/>
+				<xsd:enumeration value="antigua and barbuda"/>
+				<xsd:enumeration value="argentina"/>
+				<xsd:enumeration value="armenia"/>
+				<xsd:enumeration value="aruba"/>
+				<xsd:enumeration value="australia"/>
+				<xsd:enumeration value="austria"/>
+				<xsd:enumeration value="azerbaijan"/>
+				<xsd:enumeration value="bahamas"/>
+				<xsd:enumeration value="bahrain"/>
+				<xsd:enumeration value="bangladesh"/>
+				<xsd:enumeration value="barbados"/>
+				<xsd:enumeration value="belarus"/>
+				<xsd:enumeration value="belgium"/>
+				<xsd:enumeration value="belize"/>
+				<xsd:enumeration value="benin"/>
+				<xsd:enumeration value="bermuda"/>
+				<xsd:enumeration value="bhutan"/>
+				<xsd:enumeration value="bolivia, plurinational state of"/>
+				<xsd:enumeration value="bosnia and herzegovina"/>
+				<xsd:enumeration value="botswana"/>
+				<xsd:enumeration value="bouvet island"/>
+				<xsd:enumeration value="brazil"/>
+				<xsd:enumeration value="british indian ocean territory"/>
+				<xsd:enumeration value="brunei darussalam"/>
+				<xsd:enumeration value="bulgaria"/>
+				<xsd:enumeration value="burkina faso"/>
+				<xsd:enumeration value="burundi"/>
+				<xsd:enumeration value="cambodia"/>
+				<xsd:enumeration value="cameroon"/>
+				<xsd:enumeration value="canada"/>
+				<xsd:enumeration value="cape verde"/>
+				<xsd:enumeration value="cayman islands"/>
+				<xsd:enumeration value="central african republic"/>
+				<xsd:enumeration value="chad"/>
+				<xsd:enumeration value="chile"/>
+				<xsd:enumeration value="china"/>
+				<xsd:enumeration value="christmas island"/>
+				<xsd:enumeration value="cocos (keeling) islands"/>
+				<xsd:enumeration value="colombia"/>
+				<xsd:enumeration value="comoros"/>
+				<xsd:enumeration value="congo"/>
+				<xsd:enumeration value="congo, the democratic republic of the"/>
+				<xsd:enumeration value="cook islands"/>
+				<xsd:enumeration value="costa rica"/>
+				<xsd:enumeration value="cote d'ivoire"/>
+				<xsd:enumeration value="croatia"/>
+				<xsd:enumeration value="cuba"/>
+				<xsd:enumeration value="cyprus"/>
+				<xsd:enumeration value="czech republic"/>
+				<xsd:enumeration value="denmark"/>
+				<xsd:enumeration value="djibouti"/>
+				<xsd:enumeration value="dominica"/>
+				<xsd:enumeration value="dominican republic"/>
+				<xsd:enumeration value="ecuador"/>
+				<xsd:enumeration value="egypt"/>
+				<xsd:enumeration value="el salvador"/>
+				<xsd:enumeration value="equatorial guinea"/>
+				<xsd:enumeration value="eritrea"/>
+				<xsd:enumeration value="estonia"/>
+				<xsd:enumeration value="ethiopia"/>
+				<xsd:enumeration value="falkland islands (malvinas)"/>
+				<xsd:enumeration value="faroe islands"/>
+				<xsd:enumeration value="fiji"/>
+				<xsd:enumeration value="finland"/>
+				<xsd:enumeration value="france"/>
+				<xsd:enumeration value="french guiana"/>
+				<xsd:enumeration value="french polynesia"/>
+				<xsd:enumeration value="french southern territories"/>
+				<xsd:enumeration value="gabon"/>
+				<xsd:enumeration value="gambia"/>
+				<xsd:enumeration value="georgia"/>
+				<xsd:enumeration value="germany"/>
+				<xsd:enumeration value="ghana"/>
+				<xsd:enumeration value="gibraltar"/>
+				<xsd:enumeration value="greece"/>
+				<xsd:enumeration value="greenland"/>
+				<xsd:enumeration value="grenada"/>
+				<xsd:enumeration value="guadeloupe"/>
+				<xsd:enumeration value="guam"/>
+				<xsd:enumeration value="guatemala"/>
+				<xsd:enumeration value="guernsey"/>
+				<xsd:enumeration value="guinea"/>
+				<xsd:enumeration value="guinea-bissau"/>
+				<xsd:enumeration value="guyana"/>
+				<xsd:enumeration value="haiti"/>
+				<xsd:enumeration value="heard island and mcdonald islands"/>
+				<xsd:enumeration value="holy see (vatican city state)"/>
+				<xsd:enumeration value="honduras"/>
+				<xsd:enumeration value="hong kong"/>
+				<xsd:enumeration value="hungary"/>
+				<xsd:enumeration value="iceland"/>
+				<xsd:enumeration value="india"/>
+				<xsd:enumeration value="indonesia"/>
+				<xsd:enumeration value="iran, islamic republic of"/>
+				<xsd:enumeration value="iraq"/>
+				<xsd:enumeration value="ireland"/>
+				<xsd:enumeration value="isle of man"/>
+				<xsd:enumeration value="israel"/>
+				<xsd:enumeration value="italy"/>
+				<xsd:enumeration value="jamaica"/>
+				<xsd:enumeration value="japan"/>
+				<xsd:enumeration value="jersey"/>
+				<xsd:enumeration value="jordan"/>
+				<xsd:enumeration value="kazakhstan"/>
+				<xsd:enumeration value="kenya"/>
+				<xsd:enumeration value="kiribati"/>
+				<xsd:enumeration value="korea, democratic people's republic of"/>
+				<xsd:enumeration value="korea, republic of"/>
+				<xsd:enumeration value="kuwait"/>
+				<xsd:enumeration value="kyrgyzstan"/>
+				<xsd:enumeration value="lao people's democratic republic"/>
+				<xsd:enumeration value="latvia"/>
+				<xsd:enumeration value="lebanon"/>
+				<xsd:enumeration value="lesotho"/>
+				<xsd:enumeration value="liberia"/>
+				<xsd:enumeration value="libyan arab jamahiriya"/>
+				<xsd:enumeration value="liechtenstein"/>
+				<xsd:enumeration value="lithuania"/>
+				<xsd:enumeration value="luxembourg"/>
+				<xsd:enumeration value="macao"/>
+				<xsd:enumeration value="macedonia, the former yugoslav republic of"/>
+				<xsd:enumeration value="madagascar"/>
+				<xsd:enumeration value="malawi"/>
+				<xsd:enumeration value="malaysia"/>
+				<xsd:enumeration value="maldives"/>
+				<xsd:enumeration value="mali"/>
+				<xsd:enumeration value="malta"/>
+				<xsd:enumeration value="marshall islands"/>
+				<xsd:enumeration value="martinique"/>
+				<xsd:enumeration value="mauritania"/>
+				<xsd:enumeration value="mauritius"/>
+				<xsd:enumeration value="mayotte"/>
+				<xsd:enumeration value="mexico"/>
+				<xsd:enumeration value="micronesia, federated states of"/>
+				<xsd:enumeration value="moldova, republic of"/>
+				<xsd:enumeration value="monaco"/>
+				<xsd:enumeration value="mongolia"/>
+				<xsd:enumeration value="montenegro"/>
+				<xsd:enumeration value="montserrat"/>
+				<xsd:enumeration value="morocco"/>
+				<xsd:enumeration value="mozambique"/>
+				<xsd:enumeration value="myanmar"/>
+				<xsd:enumeration value="namibia"/>
+				<xsd:enumeration value="nauru"/>
+				<xsd:enumeration value="nepal"/>
+				<xsd:enumeration value="netherlands"/>
+				<xsd:enumeration value="netherlands antilles"/>
+				<xsd:enumeration value="new caledonia"/>
+				<xsd:enumeration value="new zealand"/>
+				<xsd:enumeration value="nicaragua"/>
+				<xsd:enumeration value="niger"/>
+				<xsd:enumeration value="nigeria"/>
+				<xsd:enumeration value="niue"/>
+				<xsd:enumeration value="norfolk island"/>
+				<xsd:enumeration value="northern mariana islands"/>
+				<xsd:enumeration value="norway"/>
+				<xsd:enumeration value="oman"/>
+				<xsd:enumeration value="pakistan"/>
+				<xsd:enumeration value="palau"/>
+				<xsd:enumeration value="palestinian territory, occupied"/>
+				<xsd:enumeration value="panama"/>
+				<xsd:enumeration value="papua new guinea"/>
+				<xsd:enumeration value="paraguay"/>
+				<xsd:enumeration value="peru"/>
+				<xsd:enumeration value="philippines"/>
+				<xsd:enumeration value="pitcairn"/>
+				<xsd:enumeration value="poland"/>
+				<xsd:enumeration value="portugal"/>
+				<xsd:enumeration value="puerto rico"/>
+				<xsd:enumeration value="qatar"/>
+				<xsd:enumeration value="reunion"/>
+				<xsd:enumeration value="romania"/>
+				<xsd:enumeration value="russian federation"/>
+				<xsd:enumeration value="rwanda"/>
+				<xsd:enumeration value="saint barthelemy"/>
+				<xsd:enumeration value="saint helena"/>
+				<xsd:enumeration value="saint kitts and nevis"/>
+				<xsd:enumeration value="saint lucia"/>
+				<xsd:enumeration value="saint martin"/>
+				<xsd:enumeration value="saint pierre and miquelon"/>
+				<xsd:enumeration value="saint vincent and the grenadines"/>
+				<xsd:enumeration value="samoa"/>
+				<xsd:enumeration value="san marino"/>
+				<xsd:enumeration value="sao tome and principe"/>
+				<xsd:enumeration value="saudi arabia"/>
+				<xsd:enumeration value="senegal"/>
+				<xsd:enumeration value="serbia"/>
+				<xsd:enumeration value="seychelles"/>
+				<xsd:enumeration value="sierra leone"/>
+				<xsd:enumeration value="singapore"/>
+				<xsd:enumeration value="slovakia"/>
+				<xsd:enumeration value="slovenia"/>
+				<xsd:enumeration value="solomon islands"/>
+				<xsd:enumeration value="somalia"/>
+				<xsd:enumeration value="south africa"/>
+				<xsd:enumeration value="south georgia and the south sandwich islands"/>
+				<xsd:enumeration value="spain"/>
+				<xsd:enumeration value="sri lanka"/>
+				<xsd:enumeration value="sudan"/>
+				<xsd:enumeration value="suriname"/>
+				<xsd:enumeration value="svalbard and jan mayen"/>
+				<xsd:enumeration value="swaziland"/>
+				<xsd:enumeration value="sweden"/>
+				<xsd:enumeration value="switzerland"/>
+				<xsd:enumeration value="syrian arab republic"/>
+				<xsd:enumeration value="taiwan, province of china"/>
+				<xsd:enumeration value="tajikistan"/>
+				<xsd:enumeration value="tanzania, united republic of"/>
+				<xsd:enumeration value="thailand"/>
+				<xsd:enumeration value="timor-leste"/>
+				<xsd:enumeration value="togo"/>
+				<xsd:enumeration value="tokelau"/>
+				<xsd:enumeration value="tonga"/>
+				<xsd:enumeration value="trinidad and tobago"/>
+				<xsd:enumeration value="tunisia"/>
+				<xsd:enumeration value="turkey"/>
+				<xsd:enumeration value="turkmenistan"/>
+				<xsd:enumeration value="turks and caicos islands"/>
+				<xsd:enumeration value="tuvalu"/>
+				<xsd:enumeration value="uganda"/>
+				<xsd:enumeration value="ukraine"/>
+				<xsd:enumeration value="united arab emirates"/>
+				<xsd:enumeration value="united kingdom"/>
+				<xsd:enumeration value="united states"/>
+				<xsd:enumeration value="united states minor outlying islands"/>
+				<xsd:enumeration value="uruguay"/>
+				<xsd:enumeration value="uzbekistan"/>
+				<xsd:enumeration value="vanuatu"/>
+				<xsd:enumeration value="venezuela, bolivarian republic of"/>
+				<xsd:enumeration value="viet nam"/>
+				<xsd:enumeration value="virgin islands, british"/>
+				<xsd:enumeration value="virgin islands, u.s."/>
+				<xsd:enumeration value="wallis and futuna"/>
+				<xsd:enumeration value="western sahara"/>
+				<xsd:enumeration value="yemen"/>
+				<xsd:enumeration value="zambia"/>
+				<xsd:enumeration value="zimbabwe"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrTelephoneCountryCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="5"/>
+				<xsd:pattern value="([0-9])*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrTelephoneAreaCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{2}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrTelephoneServiceLineItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="01"/>
+				<xsd:enumeration value="02"/>
+				<xsd:enumeration value="03"/>
+				<xsd:enumeration value="09"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrElectronicContactUsageItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="01"/>
+				<xsd:enumeration value="02"/>
+				<xsd:enumeration value="03"/>
+				<xsd:enumeration value="05"/>
+				<xsd:enumeration value="08"/>
+				<xsd:enumeration value="09"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrTelephoneUsageItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="01"/>
+				<xsd:enumeration value="02"/>
+				<xsd:enumeration value="03"/>
+				<xsd:enumeration value="04"/>
+				<xsd:enumeration value="05"/>
+				<xsd:enumeration value="08"/>
+				<xsd:enumeration value="09"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrElectronicContactPreferenceItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="01"/>
+				<xsd:enumeration value="02"/>
+				<xsd:enumeration value="03"/>
+				<xsd:enumeration value="09"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrEmailItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="250"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPaymentBasisItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:tokenItemType">
+				<xsd:enumeration value="F"/>
+				<xsd:enumeration value="P"/>
+				<xsd:enumeration value="C"/>
+				<xsd:enumeration value="L"/>
+				<xsd:enumeration value="S"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrFamilyNameItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="40"/>
+				<xsd:pattern value="([0-9a-zA-Z \.,\?\(\)\{\}:;'\|\-_=\\/@#$%\*=&amp;&quot;])*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrGivenNameItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="40"/>
+				<xsd:pattern value="([0-9a-zA-Z \.,\?\(\)\{\}:;'\|\-_=\\/@#$%\*=&amp;&quot;])*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrOtherGivenNameItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="40"/>
+				<xsd:pattern value="([0-9a-zA-Z \.,\?\(\)\{\}:;'\|\-_=\\/@#$%\*=&amp;&quot;])*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrNameCurrencyItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="P"/>
+				<xsd:enumeration value="C"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPersonNameTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="LGL"/>
+				<xsd:enumeration value="AKA"/>
+				<xsd:enumeration value="BTH"/>
+				<xsd:enumeration value="MDN"/>
+				<xsd:enumeration value="NEW"/>
+				<xsd:enumeration value="STG"/>
+				<xsd:enumeration value="TRB"/>
+				<xsd:enumeration value="OTH"/>
+				<xsd:enumeration value="CNT"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrOrganisationNameTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="MN"/>
+				<xsd:enumeration value="MTR"/>
+				<xsd:enumeration value="OTR"/>
+				<xsd:enumeration value="OTH"/>
+				<xsd:enumeration value="MAU"/>
+				<xsd:enumeration value="UNK"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrSexItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="2"/>
+				<xsd:enumeration value="3"/>
+				<xsd:enumeration value="0"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPersonRelationshipStatusItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="2"/>
+				<xsd:enumeration value="3"/>
+				<xsd:enumeration value="4"/>
+				<xsd:enumeration value="5"/>
+				<xsd:enumeration value="9"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPaymentArrangementTerminationCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="T"/>
+				<xsd:enumeration value=" "/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrLocalityNameItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="46"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPostcodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{4}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrTaxFileNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:minLength value="8"/>
+				<xsd:maxLength value="9"/>
+				<xsd:pattern value="([0-9])*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrAustralianBusinessNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{11}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrWithholderPayerNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{11}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrTelephoneNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="16"/>
+				<xsd:pattern value="([0-9a-zA-Z\s])*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrOrganisationNameItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="200"/>
+				<xsd:pattern value="([0-9a-zA-Z \.,\?!\(\)\{\}:;'\|\-_=\\/@#$%\*=&amp;&quot;])*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPersonFullNameItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="500"/>
+				<xsd:pattern value="([0-9a-zA-Z \.,\?\(\)\{\}:;'\|\-_=\\/@#$%\*=&amp;&quot;])*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrOrganisationActivityStatusItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="01"/>
+				<xsd:enumeration value="02"/>
+				<xsd:enumeration value="03"/>
+				<xsd:enumeration value="04"/>
+				<xsd:enumeration value="05"/>
+				<xsd:enumeration value="06"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrOrganisationTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="01"/>
+				<xsd:enumeration value="02"/>
+				<xsd:enumeration value="03"/>
+				<xsd:enumeration value="04"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+		<!--(LDP 2006)NOTE: the enumerations above are a sample only. They should be finalised for the production ready version of the Taxonomy!-->
+	</xsd:complexType>
+	<xsd:complexType name="sbrOrganisationIndustry1993CodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="02111"/>
+				<xsd:enumeration value="02112"/>
+				<xsd:enumeration value="02113"/>
+				<xsd:enumeration value="02114"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+		<!--(LDP 2006)NOTE: the enumerations above are sample only. They should be finalised for the production ready version of the Taxonomy!-->
+	</xsd:complexType>
+	<xsd:complexType name="sbrOrganisationIndustry2006CodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="02111"/>
+				<xsd:enumeration value="02112"/>
+				<xsd:enumeration value="02113"/>
+				<xsd:enumeration value="02114"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+		<!--(LDP 2006)NOTE: the enumerations above are sample only. They should be finalised for the production ready version of the Taxonomy!-->
+	</xsd:complexType>
+	<xsd:complexType name="sbrTriIndicatorItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value=" "/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrTFNExemptionCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="0"/>
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="3"/>
+				<xsd:enumeration value="4"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrReturnMediaTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="P"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrOrganisationBranchItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="3"/>
+				<xsd:pattern value="([1-9]|[1-9][0-9]|[1-9][0-9][0-9])*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrDeliveryPointItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{8}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrAddressLineItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="50"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrVoiceAddressItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="500"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrVoiceProductItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="256"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrVoiceServiceProviderItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="200"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrWebUrlItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="1100"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPersonOccupationCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="230300"/>
+				<xsd:enumeration value="230311"/>
+				<xsd:enumeration value="230325"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+		<!--(LDP 2006)NOTE: the enumerations above are sample only. They should be finalised for the production ready version of the Taxonomy!-->
+	</xsd:complexType>
+	<xsd:complexType name="sbrNameSuffixItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="5"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrNameTitleItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="12"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrIdentifierStatusCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="2"/>
+				<xsd:enumeration value="3"/>
+				<xsd:enumeration value="4"/>
+				<xsd:enumeration value="9"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrATOCorporateGatewayUserIDItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="10"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrIdentifierDesignationItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="20"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrIdentifierNameItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="50"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrIdentifierIssuerItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="200"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrString16ItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="16"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrInteger3digitsItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{3}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPaymentReferenceNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9a-zA-Z_]{18}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrBPayBillerCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="([0-9])*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrBankServiceBranchCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{6}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrFinancialInstitutionAccountNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="([0-9])*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrQldSroClientNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{7}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrDocumentIdentificationItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="20"/>
+				<xsd:pattern value="([0-9a-zA-Z \.,\?\(\)\{\}:;'\|\-_=\\/@#$%\*=&amp;&quot;])*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrTaxAgentNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{8}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrFinclStmtRprtLodgReasonCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="388A"/>
+				<xsd:enumeration value="388B"/>
+				<xsd:enumeration value="388C"/>
+				<xsd:enumeration value="388D"/>
+				<xsd:enumeration value="388H"/>
+				<xsd:enumeration value="388I"/>
+				<xsd:enumeration value="388J"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrABSUnitIdentifierItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9a-zA-Z]{22}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrFinancialConceptItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="OTHINC"/>
+				<xsd:enumeration value="OTHEXP"/>
+				<xsd:enumeration value="OTHCAP"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrFinancialConceptOrderItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{3}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrAustralianCompanyNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{9}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrAustralianRegisteredBodyNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{9}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrAustralianRegisteredSchemeNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{9}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrRegisteredAuditorNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{1,7}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrASICAgentNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{6}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrReportTransactionIdentifierItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]{10}"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrEmployerGroupStatusItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="DGE"/>
+				<xsd:enumeration value="NGE"/>
+				<xsd:enumeration value="GE"/>
+				<xsd:enumeration value="DGESG"/>
+				<xsd:enumeration value="DGENSG"/>
+				<xsd:enumeration value="DGESM"/>
+				<xsd:enumeration value="DGELWG"/>
+				<xsd:enumeration value="DGELSG"/>
+				<xsd:enumeration value="SM"/>
+				<xsd:enumeration value="NSM"/>
+				<xsd:enumeration value="NSGOM"/>
+				<xsd:enumeration value="OM"/>
+				<xsd:enumeration value="ALL"/>
+				<xsd:enumeration value="ALLSM"/>
+				<xsd:enumeration value="ALLOM"/>
+				<xsd:enumeration value="ANY"/>
+				<xsd:enumeration value="NSL"/>
+				<xsd:enumeration value="SHA"/>
+				<xsd:enumeration value="ISG"/>
+				<xsd:enumeration value="ALLGM"/>
+				<xsd:enumeration value="ALLNSM"/>
+				<xsd:enumeration value="SLM"/>
+				<xsd:enumeration value="SGOM"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPersonUnstructuredNameUsageItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Administrator"/>
+				<xsd:enumeration value="MailRecipient"/>
+				<xsd:enumeration value="Contact"/>
+				<xsd:enumeration value="Signatory"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrBusinessExceptionSeverityCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Error"/>
+				<xsd:enumeration value="Warning"/>
+				<xsd:enumeration value="Information"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrBusinessExceptionTypeCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Application"/>
+				<xsd:enumeration value="Syntax"/>
+				<xsd:enumeration value="Timeout"/>
+				<xsd:enumeration value="Authorisation"/>
+				<xsd:enumeration value="DeliveryFailure"/>
+				<xsd:enumeration value="Signature"/>
+				<xsd:enumeration value="Sequence"/>
+				<xsd:enumeration value="Authentication"/>
+				<xsd:enumeration value="Rule"/>
+				<xsd:enumeration value="Other"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrBusinessSignalTypeCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="ReceiptAcceptance"/>
+				<xsd:enumeration value="ReceiptException"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrInteractionPartnerRoleTypeCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="ReportingParty"/>
+				<xsd:enumeration value="Intermediary"/>
+				<xsd:enumeration value="ATO"/>
+				<xsd:enumeration value="ABS"/>
+				<xsd:enumeration value="ASIC"/>
+				<xsd:enumeration value="APRA"/>
+				<xsd:enumeration value="OSRQLD"/>
+				<xsd:enumeration value="OSRACT"/>
+				<xsd:enumeration value="OSRVIC"/>
+				<xsd:enumeration value="OSRNSW"/>
+				<xsd:enumeration value="OSRTAS"/>
+				<xsd:enumeration value="OSRNT"/>
+				<xsd:enumeration value="OSRSA"/>
+				<xsd:enumeration value="OSRWA"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrStatementTypeItemtype">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="A"/>
+				<xsd:enumeration value="B"/>
+				<xsd:enumeration value="C"/>
+				<xsd:enumeration value="D"/>
+				<xsd:enumeration value="F"/>
+				<xsd:enumeration value="G"/>
+				<xsd:enumeration value="H"/>
+				<xsd:enumeration value="I"/>
+				<xsd:enumeration value="J"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value="P"/>
+				<xsd:enumeration value="Q"/>
+				<xsd:enumeration value="R"/>
+				<xsd:enumeration value="S"/>
+				<xsd:enumeration value="T"/>
+				<xsd:enumeration value="U"/>
+				<xsd:enumeration value="V"/>
+				<xsd:enumeration value="W"/>
+				<xsd:enumeration value="X"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value="Z"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrStatementPeriodSequenceItemtype">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="3"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrFbtVariationReasonCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="22"/>
+				<xsd:enumeration value="30"/>
+				<xsd:enumeration value="31"/>
+				<xsd:enumeration value="32"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrGstReportingOptionItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="0"/>
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="2"/>
+				<xsd:enumeration value="3"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrGstInstalmentVariationReasonItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="22"/>
+				<xsd:enumeration value="23"/>
+				<xsd:enumeration value="24"/>
+				<xsd:enumeration value="25"/>
+				<xsd:enumeration value="26"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPaygInstalmentOptionItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="0"/>
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="2"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPaygInstalmentVariationReasonItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="12"/>
+				<xsd:enumeration value="13"/>
+				<xsd:enumeration value="21"/>
+				<xsd:enumeration value="22"/>
+				<xsd:enumeration value="23"/>
+				<xsd:enumeration value="24"/>
+				<xsd:enumeration value="25"/>
+				<xsd:enumeration value="26"/>
+				<xsd:enumeration value="27"/>
+				<xsd:enumeration value="28"/>
+				<xsd:enumeration value="29"/>
+				<xsd:enumeration value="3"/>
+				<xsd:enumeration value="33"/>
+				<xsd:enumeration value="34"/>
+				<xsd:enumeration value="75"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrStatementSearchCriteriaItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Unlodged"/>
+				<xsd:enumeration value="Historical"/>
+				<xsd:enumeration value="All"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPaygPaymentTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="DINB"/>
+				<xsd:enumeration value="DBUS"/>
+				<xsd:enumeration value="DLHO"/>
+				<xsd:enumeration value="DAIP"/>
+				<xsd:enumeration value="DEMP"/>
+				<xsd:enumeration value="DPEN"/>
+				<xsd:enumeration value="DSLS"/>
+				<xsd:enumeration value="DASP"/>
+				<xsd:enumeration value="DFRW"/>
+				<xsd:enumeration value="DNOABN"/>
+				<xsd:enumeration value="W2"/>
+				<xsd:enumeration value="W3"/>
+				<xsd:enumeration value="SLSA"/>
+				<xsd:enumeration value="DLVP"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrStatementProcessStatusItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="DSP"/>
+				<xsd:enumeration value="GEN"/>
+				<xsd:enumeration value="RCVD"/>
+				<xsd:enumeration value="EXCL"/>
+				<xsd:enumeration value="FIN"/>
+				<xsd:enumeration value="CANC"/>
+				<xsd:enumeration value="DISC"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrWithholdingPaymentIncomeTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="001"/>
+				<xsd:enumeration value="002"/>
+				<xsd:enumeration value="003"/>
+				<xsd:enumeration value="004"/>
+				<xsd:enumeration value="005"/>
+				<xsd:enumeration value="006"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrIndividualNonBusinessIncomeTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="S"/>
+				<xsd:enumeration value="P"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrLabourHireArrangementOrOtherSpecifiedByRegulationItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="001"/>
+				<xsd:enumeration value="002"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrInsuranceBeneficiaryTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="T"/>
+				<xsd:enumeration value="O"/>
+				<xsd:enumeration value="D"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPaymentToForeignResidentsPayeeActivityTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="01"/>
+				<xsd:enumeration value="02"/>
+				<xsd:enumeration value="03"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPartyTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="01"/>
+				<xsd:enumeration value="02"/>
+				<xsd:enumeration value="03"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrTaxIdentificationNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="15"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPaymentToForeignResidentsVariationNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="20"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrStandardTaxRateItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:decimalItemType">
+				<xsd:totalDigits value="7"/>
+				<xsd:fractionDigits value="2"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPartyTypeCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Auditor"/>
+				<xsd:enumeration value="AuditorGeneral"/>
+				<xsd:enumeration value="DesignatedGroupMember"/>
+				<xsd:enumeration value="Director"/>
+				<xsd:enumeration value="Intermediary"/>
+				<xsd:enumeration value="Payee"/>
+				<xsd:enumeration value="ReportingParty"/>
+				<xsd:enumeration value="Signer"/>
+				<xsd:enumeration value="Contact"/>
+				<xsd:enumeration value="OfficialCorrespondenceRecipient"/>
+				<xsd:enumeration value="PublicOfficer"/>
+				<xsd:enumeration value="ControllingParty"/>
+				<xsd:enumeration value="GovernmentAgency"/>
+				<xsd:enumeration value="Employer"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPaymentMethodCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="EFT"/>
+				<xsd:enumeration value="DirectDebit"/>
+				<xsd:enumeration value="DirectCredit"/>
+				<xsd:enumeration value="Bpay"/>
+				<xsd:enumeration value="Cheque"/>
+				<xsd:enumeration value="InPerson"/>
+				<xsd:enumeration value="None"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPaymentStatusCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Pending"/>
+				<xsd:enumeration value="Paid"/>
+				<xsd:enumeration value="Failed"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPayrollTaxDeductionMethodTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="A"/>
+				<xsd:enumeration value="E"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPeriodStateCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="AIG"/>
+				<xsd:enumeration value="AIM"/>
+				<xsd:enumeration value="AIN"/>
+				<xsd:enumeration value="ALG"/>
+				<xsd:enumeration value="ALM"/>
+				<xsd:enumeration value="ALN"/>
+				<xsd:enumeration value="MIG"/>
+				<xsd:enumeration value="MIM"/>
+				<xsd:enumeration value="MIN"/>
+				<xsd:enumeration value="MLG"/>
+				<xsd:enumeration value="MLM"/>
+				<xsd:enumeration value="MLN"/>
+				<xsd:enumeration value="QIG"/>
+				<xsd:enumeration value="QIM"/>
+				<xsd:enumeration value="QIN"/>
+				<xsd:enumeration value="QLG"/>
+				<xsd:enumeration value="QLM"/>
+				<xsd:enumeration value="QLN"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPeriodTypeCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="LastPayPeriod"/>
+				<xsd:enumeration value="Report"/>
+				<xsd:enumeration value="Lodgment"/>
+				<xsd:enumeration value="Payment"/>
+				<xsd:enumeration value="PartPeriod"/>
+				<xsd:enumeration value="GroupStatus"/>
+				<xsd:enumeration value="GroupMember"/>
+				<xsd:enumeration value="SubstitutedAccountingPeriod"/>
+				<xsd:enumeration value="GSTReportingPeriod"/>
+				<xsd:enumeration value="ITWReportingPeriod"/>
+				<xsd:enumeration value="FBTReportingPeriod"/>
+				<xsd:enumeration value="ITIReportingPeriod"/>
+				<xsd:enumeration value="EmploymentPeriod"/>
+				<xsd:enumeration value="ReconciliationPeriod"/>
+				<xsd:enumeration value="PeriodicPeriod"/>
+				<xsd:enumeration value="PayrollTaxPeriod"/>
+				<xsd:enumeration value="PayrollTaxThreshold"/>
+				<xsd:enumeration value="PayrollTaxRate"/>
+				<xsd:enumeration value="InterstateReconciliation"/>
+				<xsd:enumeration value="StateReconciliation"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPersonNameUsageItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Contact"/>
+				<xsd:enumeration value="MailRecipient"/>
+				<xsd:enumeration value="Administrator"/>
+				<xsd:enumeration value="Signatory"/>
+				<xsd:enumeration value="DeclarationSignatory"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPreferredContactMethodCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Telephone"/>
+				<xsd:enumeration value="Mail"/>
+				<xsd:enumeration value="Email"/>
+				<xsd:enumeration value="Fax"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrRefundReasonCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="WagesOverstated"/>
+				<xsd:enumeration value="FBT"/>
+				<xsd:enumeration value="Superannuation"/>
+				<xsd:enumeration value="ETPs"/>
+				<xsd:enumeration value="Contractors"/>
+				<xsd:enumeration value="Allowances"/>
+				<xsd:enumeration value="InterstateWages"/>
+				<xsd:enumeration value="ApprenticesTrainees"/>
+				<xsd:enumeration value="ThresholdNotClaimed"/>
+				<xsd:enumeration value="JunePaymentMade"/>
+				<xsd:enumeration value="PreviousMiscalulation"/>
+				<xsd:enumeration value="Other"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrReportSatisfactionLevelItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Very Good"/>
+				<xsd:enumeration value="Satisfactory"/>
+				<xsd:enumeration value="Poor"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrReportTransactionTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="VAL"/>
+				<xsd:enumeration value="LI"/>
+				<xsd:enumeration value="LIR"/>
+				<xsd:enumeration value="GET"/>
+				<xsd:enumeration value="GETR"/>
+				<xsd:enumeration value="CONF"/>
+				<xsd:enumeration value="SUB"/>
+				<xsd:enumeration value="REC"/>
+				<xsd:enumeration value="PM"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrReportBusinessOperationItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Compliance"/>
+				<xsd:enumeration value="CompliancePenalty"/>
+				<xsd:enumeration value="Penalty"/>
+				<xsd:enumeration value="Payment"/>
+				<xsd:enumeration value="Refund"/>
+				<xsd:enumeration value="Remission"/>
+				<xsd:enumeration value="Return"/>
+				<xsd:enumeration value="RevenueAdjustment"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrReportTypeCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="as.0001"/>
+				<xsd:enumeration value="f388.0001"/>
+				<xsd:enumeration value="ptmcnsw.0001"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrReportTypeVariationCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrResidencyTaxPurposesOrganisationItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="01"/>
+				<xsd:enumeration value="02"/>
+				<xsd:enumeration value="03"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrTaxRateTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="PAYGVoluntaryAgr"/>
+				<xsd:enumeration value="PayrollTax"/>
+				<xsd:enumeration value="OverdueInterest"/>
+				<xsd:enumeration value="OverduePenalty"/>
+				<xsd:enumeration value="CurrencyTranslation"/>
+				<xsd:enumeration value="Instalment"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrTerritoryRevenueSystemCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="8"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrWorkcoverEmploymentNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="8"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrDesignatedGroupThresholdEntitlementCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="FUL"/>
+				<xsd:enumeration value="SHA"/>
+				<xsd:enumeration value="NON"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrEmployerChangeOfStatusReasonCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="01"/>
+				<xsd:enumeration value="02"/>
+				<xsd:enumeration value="03"/>
+				<xsd:enumeration value="04"/>
+				<xsd:enumeration value="05"/>
+				<xsd:enumeration value="06"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrEmploymentStateInterstateConditionCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="InterStateOnly"/>
+				<xsd:enumeration value="StateOnly"/>
+				<xsd:enumeration value="StateAndInterstate"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrFinancialConcpetItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="OTHINC"/>
+				<xsd:enumeration value="OTHEXP"/>
+				<xsd:enumeration value="OTHCAP"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrFringeBenefitTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="A"/>
+				<xsd:enumeration value="B"/>
+				<xsd:enumeration value="C"/>
+				<xsd:enumeration value="D"/>
+				<xsd:enumeration value="E"/>
+				<xsd:enumeration value="F"/>
+				<xsd:enumeration value="G"/>
+				<xsd:enumeration value="H"/>
+				<xsd:enumeration value="J"/>
+				<xsd:enumeration value="K"/>
+				<xsd:enumeration value="L"/>
+				<xsd:enumeration value="M"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value="P"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrGroupMemberTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Scheduled"/>
+				<xsd:enumeration value="Non-Scheduled"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrInteractionPartnerReceiverOrSenderCodeItemtype">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="R"/>
+				<xsd:enumeration value="S"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrLodgmentFrequencyItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Monthly"/>
+				<xsd:enumeration value="Quarterly"/>
+				<xsd:enumeration value="HalfYearly"/>
+				<xsd:enumeration value="Annually"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrChannelItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="P"/>
+				<xsd:enumeration value="E"/>
+				<xsd:enumeration value="MIPS"/>
+				<xsd:enumeration value="EAS"/>
+				<xsd:enumeration value="ECI"/>
+				<xsd:enumeration value="ELS"/>
+				<xsd:enumeration value="RDCC"/>
+				<xsd:enumeration value="WEB"/>
+				<xsd:enumeration value="RO"/>
+				<xsd:enumeration value="SBR"/>
+				<xsd:enumeration value="FDF"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrLodgmentStatusCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="NotStarted"/>
+				<xsd:enumeration value="InProgress"/>
+				<xsd:enumeration value="Lodged"/>
+				<xsd:enumeration value="NotLodged"/>
+				<xsd:enumeration value="Ceased"/>
+				<xsd:enumeration value="N/A"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrMonthNameItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="January"/>
+				<xsd:enumeration value="February"/>
+				<xsd:enumeration value="March"/>
+				<xsd:enumeration value="April"/>
+				<xsd:enumeration value="May"/>
+				<xsd:enumeration value="June"/>
+				<xsd:enumeration value="July"/>
+				<xsd:enumeration value="August"/>
+				<xsd:enumeration value="September"/>
+				<xsd:enumeration value="October"/>
+				<xsd:enumeration value="November"/>
+				<xsd:enumeration value="December"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrOrganisationNameUsageItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Contact"/>
+				<xsd:enumeration value="MailRecipient"/>
+				<xsd:enumeration value="Administrator"/>
+				<xsd:enumeration value="LodgmentContact"/>
+				<xsd:enumeration value="SecondaryContact"/>
+				<xsd:enumeration value="Company"/>
+				<xsd:enumeration value="Body"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrAgencyGeneratedReferenceNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="20"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrDirectDebitAccountIdentifierItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="15"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrDesignatedGroupSingleLodgerItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="9"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrDocumentExchangeNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="6"/>
+				<xsd:pattern value="[0-9]*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrEftPaymentReferenceNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="20"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrEftRemitterReferenceNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="20"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrOsrClientNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="20"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPayrollTaxGroupItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="20"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPeriodUniqueIdentifierItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="10"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrJurisdictionOfPayrollTaxLiabilityCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="W"/>
+				<xsd:enumeration value="X"/>
+				<xsd:enumeration value="C"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrGenericNumericItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:pattern value="[0-9]*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrIncomeTaxAssessmentCalculationItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="11"/>
+				<xsd:enumeration value="12"/>
+				<xsd:enumeration value="13"/>
+				<xsd:enumeration value="14"/>
+				<xsd:enumeration value="15"/>
+				<xsd:enumeration value="16"/>
+				<xsd:enumeration value="17"/>
+				<xsd:enumeration value="25"/>
+				<xsd:enumeration value="26"/>
+				<xsd:enumeration value="27"/>
+				<xsd:enumeration value="28"/>
+				<xsd:enumeration value="29"/>
+				<xsd:enumeration value="30"/>
+				<xsd:enumeration value="34"/>
+				<xsd:enumeration value="35"/>
+				<xsd:enumeration value="111"/>
+				<xsd:enumeration value="118"/>
+				<xsd:enumeration value="119"/>
+				<xsd:enumeration value="120"/>
+				<xsd:enumeration value="125"/>
+				<xsd:enumeration value="126"/>
+				<xsd:enumeration value="127"/>
+				<xsd:enumeration value="128"/>
+				<xsd:enumeration value="129"/>
+				<xsd:enumeration value="138"/>
+				<xsd:enumeration value="139"/>
+				<xsd:enumeration value="140"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrAustralianOwnedRDIncrementalItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="G"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrGovernmentPensionsAndAllowancesItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="S"/>
+				<xsd:enumeration value="A"/>
+				<xsd:enumeration value="H"/>
+				<xsd:enumeration value="M"/>
+				<xsd:enumeration value="Q"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrDoubleTaxAgreementWithholdingExemptionCountryItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="US"/>
+				<xsd:enumeration value="GB"/>
+				<xsd:enumeration value="NO"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrUnusedAnnualOrLongServiceLeavePaymentLumpSumAItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="R"/>
+				<xsd:enumeration value="T"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrMedicareLevyExemptionFullDaysItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="C"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrFamilyTrustElectionRevocationItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="R"/>
+				<xsd:enumeration value="V"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrForestryManagedInvestmentSchemeProductOrPrivateRulingItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="PR"/>
+				<xsd:enumeration value="AN"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrInterposedEntityElectionRevocationItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="R"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrInventoryValuationTaxMethodItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="C"/>
+				<xsd:enumeration value="M"/>
+				<xsd:enumeration value="R"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrLoansToRelatedPartiesItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="A"/>
+				<xsd:enumeration value="B"/>
+				<xsd:enumeration value="M"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrMotorVehicleTypeAndMethodItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="S"/>
+				<xsd:enumeration value="T"/>
+				<xsd:enumeration value="O"/>
+				<xsd:enumeration value="B"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrNonAustralianOwnedRDPremiumItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="G"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPrivateCompanyUnpaidPresentEntitlementItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="D"/>
+				<xsd:enumeration value="X"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrSalaryAndWageExpenseTaxReportingItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="C"/>
+				<xsd:enumeration value="A"/>
+				<xsd:enumeration value="B"/>
+				<xsd:enumeration value="O"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrSmallBusinessEntityIncomeNetItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="P"/>
+				<xsd:enumeration value="T"/>
+				<xsd:enumeration value="C"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrIdentifierUsageCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="State"/>
+				<xsd:enumeration value="InterState"/>
+				<xsd:enumeration value="MailRecipient"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrBusinessDocumentIdentifierTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="SenderTransactionReference"/>
+				<xsd:enumeration value="BusinessDocumentIdentifier"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPaymentRefundOrNilItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="0"/>
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="2"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrInnovationRegistrationNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="9"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrMIMEItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="doc"/>
+				<xsd:enumeration value="xls"/>
+				<xsd:enumeration value="pdf"/>
+				<xsd:enumeration value="ppt"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPersonalServicesIncomeTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="P"/>
+				<xsd:enumeration value="A"/>
+				<xsd:enumeration value="B"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrThinCapitalisationEntityTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="2"/>
+				<xsd:enumeration value="3"/>
+				<xsd:enumeration value="4"/>
+				<xsd:enumeration value="5"/>
+				<xsd:enumeration value="6"/>
+				<xsd:enumeration value="7"/>
+				<xsd:enumeration value="8"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrIncomeTaxAveragingMethodItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="2"/>
+				<xsd:enumeration value="3"/>
+				<xsd:enumeration value="4"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrExmptIntrstFrgnInvstmntFundsAndLifePoliciesItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="01"/>
+				<xsd:enumeration value="02"/>
+				<xsd:enumeration value="03"/>
+				<xsd:enumeration value="04"/>
+				<xsd:enumeration value="05"/>
+				<xsd:enumeration value="06"/>
+				<xsd:enumeration value="07"/>
+				<xsd:enumeration value="08"/>
+				<xsd:enumeration value="09"/>
+				<xsd:enumeration value="10"/>
+				<xsd:enumeration value="11"/>
+				<xsd:enumeration value="12"/>
+				<xsd:enumeration value="13"/>
+				<xsd:enumeration value="14"/>
+				<xsd:enumeration value="15"/>
+				<xsd:enumeration value="16"/>
+				<xsd:enumeration value="17"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPercentageQuarterBracketsItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="2"/>
+				<xsd:enumeration value="3"/>
+				<xsd:enumeration value="4"/>
+				<xsd:enumeration value="5"/>
+				<xsd:enumeration value="6"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPricingMethodUsedForAcquisitionsAndDisposalsItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="2"/>
+				<xsd:enumeration value="3"/>
+				<xsd:enumeration value="4"/>
+				<xsd:enumeration value="5"/>
+				<xsd:enumeration value="6"/>
+				<xsd:enumeration value="7"/>
+				<xsd:enumeration value="8"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrArmsLengthPricingMethodItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="01"/>
+				<xsd:enumeration value="02"/>
+				<xsd:enumeration value="03"/>
+				<xsd:enumeration value="04"/>
+				<xsd:enumeration value="05"/>
+				<xsd:enumeration value="06"/>
+				<xsd:enumeration value="07"/>
+				<xsd:enumeration value="08"/>
+				<xsd:enumeration value="09"/>
+				<xsd:enumeration value="10"/>
+				<xsd:enumeration value="11"/>
+				<xsd:enumeration value="12"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrAuditorActionCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="2"/>
+				<xsd:enumeration value="3"/>
+				<xsd:enumeration value="4"/>
+				<xsd:enumeration value="5"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrAuditorTypeCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="1"/>
+				<xsd:enumeration value="2"/>
+				<xsd:enumeration value="3"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrStateOrTerritoryBusinessRegistrationNumberItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:maxLength value="11"/>
+				<xsd:pattern value="([0-9a-zA-Z\s])*"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrAuditorJurisdictionItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="ACT"/>
+				<xsd:enumeration value="NSW"/>
+				<xsd:enumeration value="NT"/>
+				<xsd:enumeration value="TAS"/>
+				<xsd:enumeration value="COM"/>
+				<xsd:enumeration value="QLD"/>
+				<xsd:enumeration value="SA"/>
+				<xsd:enumeration value="VIC"/>
+				<xsd:enumeration value="WA"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrCGTEventOrAssetsItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="S"/>
+				<xsd:enumeration value="U"/>
+				<xsd:enumeration value="R"/>
+				<xsd:enumeration value="G"/>
+				<xsd:enumeration value="O"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrIncomeCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="F"/>
+				<xsd:enumeration value="C"/>
+				<xsd:enumeration value="B"/>
+				<xsd:enumeration value="R"/>
+				<xsd:enumeration value="W"/>
+				<xsd:enumeration value="O"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrIncomeDeductionCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="C"/>
+				<xsd:enumeration value="F"/>
+				<xsd:enumeration value="B"/>
+				<xsd:enumeration value="R"/>
+				<xsd:enumeration value="A"/>
+				<xsd:enumeration value="E"/>
+				<xsd:enumeration value="I"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value="O"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrFundBenefitStructureCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="A"/>
+				<xsd:enumeration value="D"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrSuperannuationBenefitPaymentCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="P"/>
+				<xsd:enumeration value="L"/>
+				<xsd:enumeration value="T"/>
+				<xsd:enumeration value="C"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrTaxationBasisOrAccountingBasisMethodCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="TAX"/>
+				<xsd:enumeration value="ACC"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrBusinessTransactionTypeCodeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="C"/>
+				<xsd:enumeration value="CP"/>
+				<xsd:enumeration value="PAY"/>
+				<xsd:enumeration value="PEN"/>
+				<xsd:enumeration value="REF"/>
+				<xsd:enumeration value="REM"/>
+				<xsd:enumeration value="RET"/>
+				<xsd:enumeration value="REVA"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrPayrollTaxDeductionVariationReasonItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="ChangeInEmployerType"/>
+				<xsd:enumeration value="ChangeToInterstateEmploymentPeriod"/>
+				<xsd:enumeration value="ActualWagesUsed"/>
+				<xsd:enumeration value="DeductionDeferredUntilAnnualReconciliation"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrReportNatureItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="Consolidated"/>
+				<xsd:enumeration value="Individual"/>
+				<xsd:enumeration value="Interim"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrReportCriterionItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="LS"/>
+				<xsd:enumeration value="LH"/>
+				<xsd:enumeration value="LO"/>
+				<xsd:enumeration value="LHLO"/>
+				<xsd:enumeration value="GI"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="sbrDeclarationStatementTypeItemType">
+		<xsd:simpleContent>
+			<xsd:restriction base="xbrli:stringItemType">
+				<xsd:enumeration value="ELP"/>
+				<xsd:enumeration value="TrueAndCorrect"/>
+				<xsd:enumeration value="s319"/>
+				<xsd:enumeration value="AuditorDeclaration"/>
+				<xsd:enumeration value="HardCopy"/>
+				<xsd:attributeGroup ref="xbrli:nonNumericItemAttrs"/>
+			</xsd:restriction>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>

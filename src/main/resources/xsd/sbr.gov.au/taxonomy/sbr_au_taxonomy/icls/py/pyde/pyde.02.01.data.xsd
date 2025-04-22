@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema targetNamespace="http://sbr.gov.au/icls/py/pyde/pyde.02.01.data" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pyde.02.01="http://sbr.gov.au/icls/py/pyde/pyde.02.01.data" xmlns:pyde.02.00="http://sbr.gov.au/icls/py/pyde/pyde.02.00.data" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:dtyp.02.03="http://sbr.gov.au/fdtn/sbr.02.03.dtyp" xmlns:tech.01.02="http://sbr.gov.au/fdtn/sbr.01.02.tech" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+	<xsd:import namespace="http://sbr.gov.au/fdtn/sbr.01.02.tech" schemaLocation="../../../fdtn/tech.sbr.01.02.xsd"/>
+	<xsd:import namespace="http://sbr.gov.au/fdtn/sbr.02.03.dtyp" schemaLocation="../../../fdtn/dtyp.sbr.02.03.xsd"/>
+	<xsd:import namespace="http://sbr.gov.au/icls/py/pyde/pyde.02.00.data" schemaLocation="pyde.02.00.data.xsd"/>
+	<xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+	<xsd:element name="pydeAbstract" id="pyde.02.01_pydeAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+	<xsd:element name="AddressDetails.Usage.Code" id="DE23" type="dtyp.02.03:sbrAddressUsageItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+	<xsd:element name="OrganisationDetails.DisclosingEntity.Indicator" substitutionGroup="xbrli:item" nillable="true" id="DE3206" xbrli:periodType="duration" type="xbrli:booleanItemType" block="substitution"/>
+	<xsd:element name="AddressDetails" id="DT134" substitutionGroup="xbrli:tuple" abstract="false" nillable="true">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.Country.Code"/>
+				<xsd:element maxOccurs="unbounded" ref="pyde.02.00:AddressDetails.Line1.Text"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.Line2.Text"/>
+				<xsd:element maxOccurs="unbounded" ref="pyde.02.00:AddressDetails.LocalityName.Text"/>
+				<xsd:element maxOccurs="unbounded" ref="pyde.02.00:AddressDetails.Postcode.Text"/>
+				<xsd:element maxOccurs="unbounded" ref="pyde.02.00:AddressDetails.StateOrTerritory.Code"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.01:AddressDetails.Usage.Code"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.Currency.Code"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.Status.Code"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.Start.Date"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.End.Date"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.DeliveryPoint.Identifier"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.Line4.Text"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.Line3.Text"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.AttentionTo.Text"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.CountryName.Text"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.OverseasAddress.Indicator"/>
+				<xsd:element minOccurs="0" ref="pyde.02.00:AddressDetails.DocumentExchange.Number"/>
+				<xsd:element minOccurs="0" ref="pyde.02.00:AddressDetails.DocumentExchangeName.Text"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.OccupyPremises.Indicator"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="pyde.02.00:AddressDetails.RegisteredOfficeOccupiersConsent.Indicator"/>
+			</xsd:sequence>
+			<xsd:attribute name="id" use="optional" type="xsd:ID"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

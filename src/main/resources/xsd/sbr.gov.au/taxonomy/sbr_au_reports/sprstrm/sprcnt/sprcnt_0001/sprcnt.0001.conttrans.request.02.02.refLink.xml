@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/software-developers/developer-tools/sbr-disclaimer-and-conditions-of-use -->
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tech.01.02="http://sbr.gov.au/fdtn/sbr.01.02.tech" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance" xsi:schemaLocation="http://sbr.gov.au/fdtn/sbr.01.02.tech ../../../../sbr_au_taxonomy/fdtn/tech.sbr.01.02.xsd">
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/legalReference" xlink:type="simple" xlink:href="../../../../sbr_au_taxonomy/fdtn/tech.sbr.01.02.xsd#legalReference"/>
+    <link:roleRef roleURI="http://sbr.gov.au/rprt/sprstrm/sprcnt/sprcnt.0001.conttrans.request.02.02/refRole" xlink:type="simple" xlink:href="sprcnt.0001.conttrans.request.02.02.report.xsd#sprcnt.0001.conttrans.request.02.02.refLink"/>
+    <link:referenceLink xlink:type="extended" xlink:role="http://sbr.gov.au/rprt/sprstrm/sprcnt/sprcnt.0001.conttrans.request.02.02/refRole">
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE12561" xlink:label="loc_DE12561"/>
+        <link:reference xlink:type="resource" xlink:label="ref_DE12561_8127" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/legalReference">
+            <tech.01.02:Act>Superannuation Guarantee (Administration) Act</tech.01.02:Act>
+            <tech.01.02:ActYear>1992</tech.01.02:ActYear>
+        </link:reference>
+        <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="loc_DE12561" xlink:to="ref_DE12561_8127"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE1940" xlink:label="loc_DE1940"/>
+        <link:reference xlink:type="resource" xlink:label="ref_DE1940_8128" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/legalReference">
+            <tech.01.02:Section>292-90</tech.01.02:Section>
+        </link:reference>
+        <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="loc_DE1940" xlink:to="ref_DE1940_8128"/>
+        <link:loc xlink:type="locator" xlink:href="../../../../sbr_au_taxonomy/icls/em/emsup/emsup.02.08.data.xsd#DE367" xlink:label="loc_DE367"/>
+        <link:reference xlink:type="resource" xlink:label="ref_DE367_8129" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/legalReference">
+            <tech.01.02:Act>Taxation Administration Act</tech.01.02:Act>
+            <tech.01.02:ActYear>1953</tech.01.02:ActYear>
+            <tech.01.02:Schedule>1</tech.01.02:Schedule>
+            <tech.01.02:Section>16-182</tech.01.02:Section>
+        </link:reference>
+        <link:referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="loc_DE367" xlink:to="ref_DE367_8129"/>
+    </link:referenceLink>
+</link:linkbase>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Dislcaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:tech.01.03="http://sbr.gov.au/fdtn/sbr.01.03.tech" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sbr.gov.au/fdtn/sbr.01.03.tech" elementFormDefault="qualified">
+    <xsd:annotation>
+        <xsd:appinfo>
+            <link:roleType roleURI="http://sbr.gov.au/fdtn/sbr.01.03.tech/dataElementStatus" id="dataElementStatus">
+                <link:definition>Data Element Status</link:definition>
+                <link:usedOn>link:label</link:usedOn>
+            </link:roleType>
+        </xsd:appinfo>
+    </xsd:annotation>
+</xsd:schema>

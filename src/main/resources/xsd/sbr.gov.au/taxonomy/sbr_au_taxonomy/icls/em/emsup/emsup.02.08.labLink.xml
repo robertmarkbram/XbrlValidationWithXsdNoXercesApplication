@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xlink:type="simple" xlink:href="../../../fdtn/tech.sbr.01.02.xsd#businessDefinition"/>
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xlink:type="simple" xlink:href="../../../fdtn/tech.sbr.01.02.xsd#dataElementGuidance"/>
+    <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12555" xlink:label="loc_DE12555"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12555" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Annual Salary For Contributions Effective End Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12555" xlink:to="lbl_DE12555"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12555" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The end date from which the Annual Salary for contributions determination is based.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12693" xlink:label="loc_DE12693"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12693" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Annual Salary For Insurance Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12693" xlink:to="lbl_DE12693"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12693" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The salary used to calculate insurance amounts.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12545" xlink:label="loc_DE12545"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12545" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Weekly Hours Worked Number</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12545" xlink:to="lbl_DE12545"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12545" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The hours of work which it is usual for an employee to work per week.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12551" xlink:label="loc_DE12551"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12551" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Insurance Opt Out Indicator</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12551" xlink:to="lbl_DE12551"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12551" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">This indicator is used to communicate to the Fund that the member does not want the Super Fund to provide an Insurance product to them.</link:label>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12551" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xml:lang="en">True = Member does not want Insurance.
+False = Member does want Insurance.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12550" xlink:label="loc_DE12550"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12550" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Fund Registration Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12550" xlink:to="lbl_DE12550"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12550" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The Date that the individual was registered with the Super Fund.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12546" xlink:label="loc_DE12546"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12546" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Benefit Category Text</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12546" xlink:to="lbl_DE12546"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12546" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The Benefit Category may be used by your superannuation provider to determine product features applied to a membership or superannuation account. </link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12557" xlink:label="loc_DE12557"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12557" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Super Contribution Cease Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12557" xlink:to="lbl_DE12557"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12557" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The date when a member's contributions cease.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12558" xlink:label="loc_DE12558"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12558" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Member Registration Amendment Reason Text</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12558" xlink:to="lbl_DE12558"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12558" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Description to accompany a change to a member's registration details. </link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12556" xlink:label="loc_DE12556"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12556" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Super Contribution Commence Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12556" xlink:to="lbl_DE12556"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12556" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The date when a member's contributions commence.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12727" xlink:label="loc_DE12727"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12727" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Member Registration Other Details Text</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12727" xlink:to="lbl_DE12727"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12727" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Additional reportable information about a member registration.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12728" xlink:label="loc_DE12728"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12728" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Member Registration Other Details Description</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12728" xlink:to="lbl_DE12728"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12728" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A description of the additional reportable information about a member registration.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12729" xlink:label="loc_DE12729"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12729" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Member Registration Other Details Start Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12729" xlink:to="lbl_DE12729"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12729" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The start date for the additional reportable information about a member registration.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12730" xlink:label="loc_DE12730"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12730" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Member Registration Other Details End Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12730" xlink:to="lbl_DE12730"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12730" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The end date for the additional reportable information about a member registration.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12554" xlink:label="loc_DE12554"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12554" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Annual Salary For Contributions Effective Start Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12554" xlink:to="lbl_DE12554"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12554" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The start date from which the Annual Salary for contributions determination is based.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12540" xlink:label="loc_DE12540"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12540" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Annual Salary For Contributions Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12540" xlink:to="lbl_DE12540"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12540" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The salary used to calculate expected and/or actual contributions. </link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12541" xlink:label="loc_DE12541"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12541" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Annual Salary For Benefits Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12541" xlink:to="lbl_DE12541"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12541" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The salary used to calculate a Defined Benefit members benefit entitlements.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12544" xlink:label="loc_DE12544"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12544" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details At Work Indicator</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12544" xlink:to="lbl_DE12544"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12544" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Be 'At Work' on the first day of employment which is indicated by SuperannuationFundDetails.EmploymentStart.Date. 'At Work' means the employee is genuinely performing all the duties of their usual occupation or are not at work on that date due to some reason other than injury or illness.</link:label>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12544" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xml:lang="en">True = At work on employment start date.
+False = Not at Work on employment start date.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12695" xlink:label="loc_DE12695"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12695" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Employment End Reason Text</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12695" xlink:to="lbl_DE12695"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12695" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A short description to explain why the employee has ended their employment.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE7406" xlink:label="loc_DE7406"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE7406" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Employment End Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE7406" xlink:to="lbl_DE7406"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE7406" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The date the member finished working with the last known main employer.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE7405" xlink:label="loc_DE7405"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE7405" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Employment Start Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE7405" xlink:to="lbl_DE7405"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE7405" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The date the member commenced working with their last known main employer. </link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12713" xlink:label="loc_DE12713"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12713" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Lost Member Code</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12713" xlink:to="lbl_DE12713"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12713" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The member has been assessed by the fund to have met the definition of a lost member - the member has either been uncontactable or their account has been inactive for a specific period of time.</link:label>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12713" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xml:lang="en">Uncontactable reported = Uncontactable - have been reported to the ATO.
+Uncontactable flagged = Uncontactable - flagged within fund for reporting to the ATO.
+Inactive reported = Inactive account - have been reported to the ATO.
+Inactive flagged = Inactive account - flagged within the fund for reporting to the ATO.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12702" xlink:label="loc_DE12702"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12702" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Eligible Service Period Start Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12702" xlink:to="lbl_DE12702"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12702" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">First day of the eligible service period in relation to the Rollover Transaction for the member.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12703" xlink:label="loc_DE12703"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12703" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Rollover Benefit Components Preserved Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12703" xlink:to="lbl_DE12703"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12703" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The Preserved amount of the total amount being transferred.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12705" xlink:label="loc_DE12705"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12705" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Rollover Benefit Components Unrestricted Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12705" xlink:to="lbl_DE12705"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12705" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The Unrestricted non-preserved amount in relation to the total amount being transferred.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12704" xlink:label="loc_DE12704"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12704" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Rollover Benefit Components Restricted Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12704" xlink:to="lbl_DE12704"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12704" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The Restricted non-preserved amount in relation to the total amount being transferred.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12700" xlink:label="loc_DE12700"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12700" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Rollover Transfer Whole Balance Indicator</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12700" xlink:to="lbl_DE12700"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12700" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Indicates if entire balance of the member's contributions with the transferring fund is to be rolled over to the receiving fund.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12706" xlink:label="loc_DE12706"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12706" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Rollover Insured Death Cover Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12706" xlink:to="lbl_DE12706"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12706" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The total sum insured amount of any death cover in place on the member account that will lapse as a result of the rollover transaction.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12707" xlink:label="loc_DE12707"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12707" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Rollover Insured Total Permanent Disablement Cover Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12707" xlink:to="lbl_DE12707"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12707" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The total sum insured amount of any total and permanent disablement (TPD) cover in place on the member account that will lapse as a result of the rollover transaction.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12708" xlink:label="loc_DE12708"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12708" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Rollover Insured Income Protection Monthly Cover Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12708" xlink:to="lbl_DE12708"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12708" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The monthly sum insured amount of any income protection/salary continuance insurance cover in place on the member account that will lapse as a result of the rollover transaction.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12709" xlink:label="loc_DE12709"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12709" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Rollover Remaining Benefit Indicator</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12709" xlink:to="lbl_DE12709"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12709" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Indicates whether the member still holds an interest in the fund within the same account that the rollover has been paid from.</link:label>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12709" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xml:lang="en">Would typically be set to "true" for partial rollovers and "false" for full rollovers but may have different treatment for funds who offer non-defined contribution accounts e.g. hybrid defined benefit/defined contribution accounts, risk-only superannuation policies etc.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12701" xlink:label="loc_DE12701"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12701" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Rollover Requested Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12701" xlink:to="lbl_DE12701"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12701" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The rollover amount that the member is requesting the transferring fund to transfer to the nominated receiving fund.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#emsup.02.08_emsupAbstract" xlink:label="loc_emsup.02.08_emsupAbstract"/>
+        <link:label xlink:type="resource" xlink:label="lbl_emsupAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_emsup.02.08_emsupAbstract" xlink:to="lbl_emsupAbstract"/>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12562" xlink:label="loc_DE12562"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12562" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Child Contributions Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12562" xlink:to="lbl_DE12562"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12562" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A contribution made by an individual for the benefit of a person less than 18, but not because they are the person's employer or where an employee directs an employer to make after-tax contributions for this purpose.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12563" xlink:label="loc_DE12563"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12563" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Employer Contributions Award Or Productivity Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12563" xlink:to="lbl_DE12563"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12563" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Contribution made by an employer for the benefit of an employee as mandated by an award or other industrial agreement.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE367" xlink:label="loc_DE367"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE367" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Employer Contributions Salary Sacrificed Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE367" xlink:to="lbl_DE367"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE367" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Salary sacrificing is a special arrangement between employers and employees where the pre-tax salary of an employee is sacrificed in return for employment related benefits. 
+Salary sacrificed earnings from superannuation refers to the salary sacrificed earnings paid on behalf of employees.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12561" xlink:label="loc_DE12561"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12561" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Employer Contributions Superannuation Guarantee Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12561" xlink:to="lbl_DE12561"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12561" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Contribution made by an employer for the benefit of an employee as mandated by super guarantee legislation</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12567" xlink:label="loc_DE12567"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12567" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Employer Contributions Voluntary Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12567" xlink:to="lbl_DE12567"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12567" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Employer contributions which are not mandated employer contributions</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE2021" xlink:label="loc_DE2021"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE2021" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Other Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE2021" xlink:to="lbl_DE2021"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE2021" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Additional reportable amount relevant to the superannuation contribution.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE2022" xlink:label="loc_DE2022"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE2022" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Other Description</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE2022" xlink:to="lbl_DE2022"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE2022" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A description of the additional reportable amount relevant to the superannuation contribution.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12699" xlink:label="loc_DE12699"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12699" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Other Details Description</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12699" xlink:to="lbl_DE12699"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12699" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A description of the additional reportable information about the superannuation contribution.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12698" xlink:label="loc_DE12698"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12698" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Other Details Text</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12698" xlink:to="lbl_DE12698"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12698" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Additional reportable information about the superannuation contribution.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE2610" xlink:label="loc_DE2610"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE2610" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Other Third Party Contributions Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE2610" xlink:to="lbl_DE2610"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE2610" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A contribution made by a third party for the benefit of another person, other than contributions made:
+- by the person's employer
+- by the person's spouse
+- for a child under 18.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12560" xlink:label="loc_DE12560"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12560" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Pay Period End Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12560" xlink:to="lbl_DE12560"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12560" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Pay period end date that the contributions relate to.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12559" xlink:label="loc_DE12559"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12559" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Pay Period Start Date</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12559" xlink:to="lbl_DE12559"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12559" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Pay period start date that the contributions relate to.</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE1940" xlink:label="loc_DE1940"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE1940" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Personal Contributions Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE1940" xlink:to="lbl_DE1940"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE1940" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A contribution made by an individual for their own benefit (whether or not they intend to claim a deduction for the contribution). Includes where an employee directs an employer to make after-tax contributions on behalf of the employee (eg: by payroll deduction).</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE12565" xlink:label="loc_DE12565"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12565" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Contribution Spouse Contributions Amount</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE12565" xlink:to="lbl_DE12565"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE12565" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A contribution made by an individual for their spouse's benefit. Includes where an employee directs an employer to make after-tax contributions on behalf of the employee's spouse (eg: by payroll deduction).</link:label>
+        <link:loc xlink:type="locator" xlink:href="emsup.02.08.data.xsd#DE7395" xlink:label="loc_DE7395"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE7395" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Superannuation Fund Details Unique Superannuation Identifier</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE7395" xlink:to="lbl_DE7395"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE7395" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The unique superannuation identifier is used for identifying the product within the fund which the member account belongs to.</link:label>
+    </link:labelLink>
+</link:linkbase>

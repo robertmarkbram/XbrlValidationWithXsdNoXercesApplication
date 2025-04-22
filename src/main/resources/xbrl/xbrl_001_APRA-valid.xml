@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xmlns:EmpAbn.02.00="http://sbr.gov.au/dims/EmpAbn.02.00.dims"
+            xmlns:RprtPyType.02.07="http://sbr.gov.au/dims/RprtPyType.02.07.dims"
+            xmlns:SprFndAbn.02.00="http://sbr.gov.au/dims/SprFndAbn.02.00.dims"
+            xmlns:SprFndUSI.02.00="http://sbr.gov.au/dims/SprFndUSI.02.00.dims"
+            xmlns:address3.02.01="http://sbr.gov.au/comnmdle/comnmdle.addressdetails3.02.01.module"
+            xmlns:dtyp.02.00="http://sbr.gov.au/fdtn/sbr.02.00.dtyp"
+            xmlns:dtyp.02.01="http://sbr.gov.au/fdtn/sbr.02.01.dtyp"
+            xmlns:dtyp.02.03="http://sbr.gov.au/fdtn/sbr.02.03.dtyp"
+            xmlns:dtyp.02.06="http://sbr.gov.au/fdtn/sbr.02.06.dtyp"
+            xmlns:dtyp.02.09="http://sbr.gov.au/fdtn/sbr.02.09.dtyp"
+            xmlns:dtyp.02.13="http://sbr.gov.au/fdtn/sbr.02.13.dtyp"
+            xmlns:dtyp.02.16="http://sbr.gov.au/fdtn/sbr.02.16.dtyp"
+            xmlns:dtyp.02.21="http://sbr.gov.au/fdtn/sbr.02.21.dtyp"
+            xmlns:dtyp.02.22="http://sbr.gov.au/fdtn/sbr.02.22.dtyp"
+            xmlns:email1.02.00="http://sbr.gov.au/comnmdle/comnmdle.electroniccontactelectronicmail1.02.00.module"
+            xmlns:emsup.02.03="http://sbr.gov.au/icls/em/emsup/emsup.02.03.data"
+            xmlns:emsup.02.08="http://sbr.gov.au/icls/em/emsup/emsup.02.08.data"
+            xmlns:fininstacc1.02.00="http://sbr.gov.au/comnmdle/comnmdle.financialinstitutionaccount1.02.00.module"
+            xmlns:link="http://www.xbrl.org/2003/linkbase"
+            xmlns:orgname1.02.00="http://sbr.gov.au/comnmdle/comnmdle.organisationname1.02.00.module"
+            xmlns:phone1.02.00="http://sbr.gov.au/comnmdle/comnmdle.electroniccontacttelephone1.02.00.module"
+            xmlns:prsnstrcnm1.02.00="http://sbr.gov.au/comnmdle/comnmdle.personstructuredname1.02.00.module"
+            xmlns:prsnstrcnm3.02.01="http://sbr.gov.au/comnmdle/comnmdle.personstructuredname3.02.01.module"
+            xmlns:pyde.02.00="http://sbr.gov.au/icls/py/pyde/pyde.02.00.data"
+            xmlns:pyde.02.01="http://sbr.gov.au/icls/py/pyde/pyde.02.01.data"
+            xmlns:pyde.02.05="http://sbr.gov.au/icls/py/pyde/pyde.02.05.data"
+            xmlns:pyde.02.08="http://sbr.gov.au/icls/py/pyde/pyde.02.08.data"
+            xmlns:pyid.02.00="http://sbr.gov.au/icls/py/pyid/pyid.02.00.data"
+            xmlns:pyid.02.05="http://sbr.gov.au/icls/py/pyid/pyid.02.05.data"
+            xmlns:pyid.02.06="http://sbr.gov.au/icls/py/pyid/pyid.02.06.data"
+            xmlns:pyin.02.00="http://sbr.gov.au/icls/py/pyin/pyin.02.00.data"
+            xmlns:pyin.02.01="http://sbr.gov.au/icls/py/pyin/pyin.02.01.data"
+            xmlns:pyin.02.03="http://sbr.gov.au/icls/py/pyin/pyin.02.03.data"
+            xmlns:pyin.02.17="http://sbr.gov.au/icls/py/pyin/pyin.02.17.data"
+            xmlns:sprcnt.0001.conttrans.req.02.02="http://sbr.gov.au/rprt/sprstrm/sprcnt/sprcnt.0001.conttrans.request.02.02.report"
+            xmlns:sprcnt.0001.prv.02.02="http://sbr.gov.au/rprt/sprstrm/sprcnt/sprcnt.0001.private.02.02.module"
+            xmlns:tech.01.02="http://sbr.gov.au/fdtn/sbr.01.02.tech"
+            xmlns:tech.01.03="http://sbr.gov.au/fdtn/sbr.01.03.tech"
+            xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+            xmlns:xbrli="http://www.xbrl.org/2003/instance"
+            xmlns:xl="http://www.xbrl.org/2003/XLink"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+   <link:schemaRef xlink:href="http://sbr.gov.au/taxonomy/sbr_au_reports/sprstrm/sprcnt/sprcnt_0001/sprcnt.0001.conttrans.request.02.02.report.xsd"
+                   xlink:type="simple"/>
+   <fininstacc1.02.00:FinancialInstitutionAccount>
+      <pyid.02.00:FinancialInstitutionAccount.BankStateBranch.Number contextRef="PAYER">082401</pyid.02.00:FinancialInstitutionAccount.BankStateBranch.Number>
+      <pyid.02.00:FinancialInstitutionAccount.FinancialInstitutionAccount.Number contextRef="PAYER">989898989</pyid.02.00:FinancialInstitutionAccount.FinancialInstitutionAccount.Number>
+      <pyid.02.00:FinancialInstitutionAccount.FinancialInstitutionAccountName.Text contextRef="PAYER">test account</pyid.02.00:FinancialInstitutionAccount.FinancialInstitutionAccountName.Text>
+   </fininstacc1.02.00:FinancialInstitutionAccount>
+   <fininstacc1.02.00:FinancialInstitutionAccount>
+      <pyid.02.00:FinancialInstitutionAccount.BankStateBranch.Number contextRef="PAYEE">909606</pyid.02.00:FinancialInstitutionAccount.BankStateBranch.Number>
+      <pyid.02.00:FinancialInstitutionAccount.FinancialInstitutionAccount.Number contextRef="PAYEE">666666666</pyid.02.00:FinancialInstitutionAccount.FinancialInstitutionAccount.Number>
+      <pyid.02.00:FinancialInstitutionAccount.FinancialInstitutionAccountName.Text contextRef="PAYEE">OZEDI Super 2</pyid.02.00:FinancialInstitutionAccount.FinancialInstitutionAccountName.Text>
+   </fininstacc1.02.00:FinancialInstitutionAccount>
+   <pyin.02.03:PaymentMechanism.PaymentMethod.Code contextRef="PAYEE">DirectCredit</pyin.02.03:PaymentMechanism.PaymentMethod.Code>
+   <pyin.02.00:PaymentRecord.Payment.Amount contextRef="PAYEE" decimals="2" unitRef="AUD">38801.35</pyin.02.00:PaymentRecord.Payment.Amount>
+   <pyin.02.00:PaymentRecord.Transaction.Date contextRef="PAYEE">2020-07-23</pyin.02.00:PaymentRecord.Transaction.Date>
+   <orgname1.02.00:OrganisationNameDetails>
+      <pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code contextRef="MSGSND">MN</pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code>
+      <pyde.02.00:OrganisationNameDetails.OrganisationalName.Text contextRef="MSGSND">SmithCoffee</pyde.02.00:OrganisationNameDetails.OrganisationalName.Text>
+   </orgname1.02.00:OrganisationNameDetails>
+   <orgname1.02.00:OrganisationNameDetails>
+      <pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code contextRef="MSGRCR">MN</pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code>
+      <pyde.02.00:OrganisationNameDetails.OrganisationalName.Text contextRef="MSGRCR">Super 2</pyde.02.00:OrganisationNameDetails.OrganisationalName.Text>
+   </orgname1.02.00:OrganisationNameDetails>
+   <orgname1.02.00:OrganisationNameDetails>
+      <pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code contextRef="PAYER">MN</pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code>
+      <pyde.02.00:OrganisationNameDetails.OrganisationalName.Text contextRef="PAYER">Hardware Company</pyde.02.00:OrganisationNameDetails.OrganisationalName.Text>
+   </orgname1.02.00:OrganisationNameDetails>
+   <orgname1.02.00:OrganisationNameDetails>
+      <pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code contextRef="CNTPRVD000006">MN</pyde.02.00:OrganisationNameDetails.OrganisationalNameType.Code>
+      <pyde.02.00:OrganisationNameDetails.OrganisationalName.Text contextRef="CNTPRVD000006">Curtain Hardware Company</pyde.02.00:OrganisationNameDetails.OrganisationalName.Text>
+   </orgname1.02.00:OrganisationNameDetails>
+   <email1.02.00:ElectronicContactElectronicMail>
+      <pyde.02.00:ElectronicContact.ElectronicMail.Usage.Code contextRef="MSGSND">03</pyde.02.00:ElectronicContact.ElectronicMail.Usage.Code>
+      <pyde.02.00:ElectronicContact.ElectronicMail.Address.Text contextRef="MSGSND">matthew.person@mail.com.au</pyde.02.00:ElectronicContact.ElectronicMail.Address.Text>
+   </email1.02.00:ElectronicContactElectronicMail>
+   <email1.02.00:ElectronicContactElectronicMail>
+      <pyde.02.00:ElectronicContact.ElectronicMail.Usage.Code contextRef="CNTRCVR000007">03</pyde.02.00:ElectronicContact.ElectronicMail.Usage.Code>
+      <pyde.02.00:ElectronicContact.ElectronicMail.Address.Text contextRef="CNTRCVR000007">Braiden@gmail.com</pyde.02.00:ElectronicContact.ElectronicMail.Address.Text>
+   </email1.02.00:ElectronicContactElectronicMail>
+   <address3.02.01:AddressDetails>
+      <pyde.02.01:AddressDetails.Usage.Code contextRef="CNTRCVR000007">POS</pyde.02.01:AddressDetails.Usage.Code>
+      <pyde.02.00:AddressDetails.Line1.Text contextRef="CNTRCVR000007">PO Box 312</pyde.02.00:AddressDetails.Line1.Text>
+      <pyde.02.00:AddressDetails.LocalityName.Text contextRef="CNTRCVR000007">GREEN CLIFFS</pyde.02.00:AddressDetails.LocalityName.Text>
+      <pyde.02.00:AddressDetails.Postcode.Text contextRef="CNTRCVR000007">3497</pyde.02.00:AddressDetails.Postcode.Text>
+      <pyde.02.00:AddressDetails.StateOrTerritory.Code contextRef="CNTRCVR000007">VIC</pyde.02.00:AddressDetails.StateOrTerritory.Code>
+      <pyde.02.08:AddressDetails.Country.Code contextRef="CNTRCVR000007">au</pyde.02.08:AddressDetails.Country.Code>
+   </address3.02.01:AddressDetails>
+   <pyin.02.17:PaymentRecord.PaymentReference.Number contextRef="PAYEE">b-prn-bbbbbbbbbbbb</pyin.02.17:PaymentRecord.PaymentReference.Number>
+   <phone1.02.00:ElectronicContactTelephone>
+      <pyde.02.00:ElectronicContact.Telephone.Usage.Code contextRef="MSGSND">03</pyde.02.00:ElectronicContact.Telephone.Usage.Code>
+      <pyde.02.00:ElectronicContact.Telephone.ServiceLine.Code contextRef="MSGSND">02</pyde.02.00:ElectronicContact.Telephone.ServiceLine.Code>
+      <pyde.02.00:ElectronicContact.Telephone.Minimal.Number contextRef="MSGSND">04040404</pyde.02.00:ElectronicContact.Telephone.Minimal.Number>
+   </phone1.02.00:ElectronicContactTelephone>
+   <phone1.02.00:ElectronicContactTelephone>
+      <pyde.02.00:ElectronicContact.Telephone.Usage.Code contextRef="CNTRCVR000007">03</pyde.02.00:ElectronicContact.Telephone.Usage.Code>
+      <pyde.02.00:ElectronicContact.Telephone.ServiceLine.Code contextRef="CNTRCVR000007">02</pyde.02.00:ElectronicContact.Telephone.ServiceLine.Code>
+      <pyde.02.00:ElectronicContact.Telephone.Area.Code contextRef="CNTRCVR000007">02</pyde.02.00:ElectronicContact.Telephone.Area.Code>
+      <pyde.02.00:ElectronicContact.Telephone.Minimal.Number contextRef="CNTRCVR000007">96812324</pyde.02.00:ElectronicContact.Telephone.Minimal.Number>
+   </phone1.02.00:ElectronicContactTelephone>
+   <pyid.02.05:Identifiers.EmploymentPayrollNumber.Identifier contextRef="CNTRCVR000007">2</pyid.02.05:Identifiers.EmploymentPayrollNumber.Identifier>
+   <pyid.02.05:Identifiers.TaxFileNumberNotProvided.Indicator contextRef="CNTRCVR000007">false</pyid.02.05:Identifiers.TaxFileNumberNotProvided.Indicator>
+   <emsup.02.03:SuperannuationFundDetails.MemberClient.Identifier contextRef="CNTRCVR000007">123457</emsup.02.03:SuperannuationFundDetails.MemberClient.Identifier>
+   <pyde.02.00:PersonDemographicDetails.Birth.Date contextRef="CNTRCVR000007">1968-01-12</pyde.02.00:PersonDemographicDetails.Birth.Date>
+   <pyde.02.00:PersonDemographicDetails.Sex.Code contextRef="CNTRCVR000007">1</pyde.02.00:PersonDemographicDetails.Sex.Code>
+   <emsup.02.08:SuperannuationContribution.EmployerContributionsSuperannuationGuarantee.Amount contextRef="CNTRCVR000007" decimals="2" unitRef="AUD">38801.35</emsup.02.08:SuperannuationContribution.EmployerContributionsSuperannuationGuarantee.Amount>
+   <emsup.02.08:SuperannuationContribution.PayPeriodEnd.Date contextRef="CNTRCVR000007">2020-06-30</emsup.02.08:SuperannuationContribution.PayPeriodEnd.Date>
+   <emsup.02.08:SuperannuationContribution.PayPeriodStart.Date contextRef="CNTRCVR000007">2020-06-01</emsup.02.08:SuperannuationContribution.PayPeriodStart.Date>
+   <xbrli:unit id="AUD">
+      <xbrli:measure xmlns:iso4217="http://www.xbrl.org/2003/iso4217">iso4217:AUD</xbrli:measure>
+   </xbrli:unit>
+   <xbrli:context id="MSGSND">
+      <xbrli:entity>
+         <xbrli:identifier scheme="http://www.abr.gov.au/abn">17088268884</xbrli:identifier>
+         <xbrli:segment>
+            <explicitMember xmlns="http://xbrl.org/2006/xbrldi"
+                            dimension="RprtPyType.02.07:ReportPartyTypeDimension">RprtPyType.02.07:MessageSender</explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+         <xbrli:startDate>2025-04-14</xbrli:startDate>
+         <xbrli:endDate>2025-04-14</xbrli:endDate>
+      </xbrli:period>
+   </xbrli:context>
+   <xbrli:context id="MSGRCR">
+      <xbrli:entity>
+         <xbrli:identifier scheme="http://www.abr.gov.au/abn">47167142672</xbrli:identifier>
+         <xbrli:segment>
+            <explicitMember xmlns="http://xbrl.org/2006/xbrldi"
+                            dimension="RprtPyType.02.07:ReportPartyTypeDimension">RprtPyType.02.07:MessageReceiver</explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+         <xbrli:startDate>2025-04-14</xbrli:startDate>
+         <xbrli:endDate>2025-04-14</xbrli:endDate>
+      </xbrli:period>
+   </xbrli:context>
+   <xbrli:context id="PAYER">
+      <xbrli:entity>
+         <xbrli:identifier scheme="http://www.abr.gov.au/abn">17088268884</xbrli:identifier>
+         <xbrli:segment>
+            <explicitMember xmlns="http://xbrl.org/2006/xbrldi"
+                            dimension="RprtPyType.02.07:ReportPartyTypeDimension">RprtPyType.02.07:Payer</explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+         <xbrli:startDate>2025-04-14</xbrli:startDate>
+         <xbrli:endDate>2025-04-14</xbrli:endDate>
+      </xbrli:period>
+   </xbrli:context>
+   <xbrli:context id="PAYEE">
+      <xbrli:entity>
+         <xbrli:identifier scheme="http://www.abr.gov.au/abn">47167142672</xbrli:identifier>
+         <xbrli:segment>
+            <explicitMember xmlns="http://xbrl.org/2006/xbrldi"
+                            dimension="RprtPyType.02.07:ReportPartyTypeDimension">RprtPyType.02.07:Payee</explicitMember>
+            <typedMember xmlns="http://xbrl.org/2006/xbrldi"
+                         dimension="SprFndUSI.02.00:SuperFundUniqueSuperannuationIdentifierDimension">
+               <SprFndUSI.02.00:SuperannuationFundDetails.UniqueSuperannuationIdentifier.Identifier>47167142672001</SprFndUSI.02.00:SuperannuationFundDetails.UniqueSuperannuationIdentifier.Identifier>
+            </typedMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+         <xbrli:startDate>2025-04-14</xbrli:startDate>
+         <xbrli:endDate>2025-04-14</xbrli:endDate>
+      </xbrli:period>
+   </xbrli:context>
+   <xbrli:context id="CNTPRVD000006">
+      <xbrli:entity>
+         <xbrli:identifier scheme="http://www.abr.gov.au/abn">17088268884</xbrli:identifier>
+         <xbrli:segment>
+            <explicitMember xmlns="http://xbrl.org/2006/xbrldi"
+                            dimension="RprtPyType.02.07:ReportPartyTypeDimension">RprtPyType.02.07:Employer</explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+         <xbrli:startDate>2025-04-14</xbrli:startDate>
+         <xbrli:endDate>2025-04-14</xbrli:endDate>
+      </xbrli:period>
+   </xbrli:context>
+   <xbrli:context id="CNTRCVR000007">
+      <xbrli:entity>
+         <xbrli:identifier scheme="http://www.ato.gov.au/tfn">660278445</xbrli:identifier>
+         <xbrli:segment>
+            <explicitMember xmlns="http://xbrl.org/2006/xbrldi"
+                            dimension="RprtPyType.02.07:ReportPartyTypeDimension">RprtPyType.02.07:SuperFundMember</explicitMember>
+            <typedMember xmlns="http://xbrl.org/2006/xbrldi"
+                         dimension="EmpAbn.02.00:EmployersABNDimension">
+               <EmpAbn.02.00:Identifiers.AustralianBusinessNumber.Identifier>17088268884</EmpAbn.02.00:Identifiers.AustralianBusinessNumber.Identifier>
+            </typedMember>
+            <typedMember xmlns="http://xbrl.org/2006/xbrldi"
+                         dimension="SprFndAbn.02.00:SuperFundABNDimension">
+               <SprFndAbn.02.00:Identifiers.AustralianBusinessNumber.Identifier>47167142672</SprFndAbn.02.00:Identifiers.AustralianBusinessNumber.Identifier>
+            </typedMember>
+            <typedMember xmlns="http://xbrl.org/2006/xbrldi"
+                         dimension="SprFndUSI.02.00:SuperFundUniqueSuperannuationIdentifierDimension">
+               <SprFndUSI.02.00:SuperannuationFundDetails.UniqueSuperannuationIdentifier.Identifier>47167142672001</SprFndUSI.02.00:SuperannuationFundDetails.UniqueSuperannuationIdentifier.Identifier>
+            </typedMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+         <xbrli:startDate>2025-04-14</xbrli:startDate>
+         <xbrli:endDate>2025-04-14</xbrli:endDate>
+      </xbrli:period>
+   </xbrli:context>
+</xbrli:xbrl>

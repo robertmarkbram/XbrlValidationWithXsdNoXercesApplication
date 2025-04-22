@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <link:roleRef roleURI="http://sbr.gov.au/comnmdle/comnmdle.electroniccontactelectronicmail1.02.00/defRole" xlink:type="simple" xlink:href="comnmdle.electroniccontactelectronicmail1.02.00.module.xsd#comnmdle.electroniccontactelectronicmail1defLink"/>
+  <link:definitionLink xlink:type="extended" xlink:role="http://sbr.gov.au/comnmdle/comnmdle.electroniccontactelectronicmail1.02.00/defRole">
+    <link:loc xlink:type="locator" xlink:href="../icls/py/pyde/pyde.02.00.data.xsd#DT143" xlink:label="DT143"/>
+    <link:loc xlink:type="locator" xlink:href="comnmdle.electroniccontactelectronicmail1.02.00.module.xsd#RT512" xlink:label="loc_RT512"/>
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/similar-tuples" xlink:from="DT143" xlink:to="loc_RT512" order="1.0"/>
+  </link:definitionLink>
+</link:linkbase>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/software-developers/developer-tools/sbr-disclaimer-and-conditions-of-use -->
+<link:linkbase xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xlink:type="simple" xlink:href="../../../fdtn/tech.sbr.01.02.xsd#businessDefinition"/>
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xlink:type="simple" xlink:href="../../../fdtn/tech.sbr.01.02.xsd#dataElementGuidance"/>
+    <link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.03.tech/dataElementStatus" xlink:type="simple" xlink:href="../../../fdtn/tech.sbr.01.03.xsd#dataElementStatus"/>
+    <link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+        <link:loc xlink:type="locator" xlink:href="pyin.02.17.data.xsd#DE13270" xlink:label="loc_DE13270"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE13270" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Interaction Banking Details Required Indicator</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE13270" xlink:to="lbl_DE13270"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE13270" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">This indicates if banking details are required.</link:label>
+        <link:label xlink:type="resource" xlink:label="lbl_DE13270" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xml:lang="en">A choice of TRUE/FALSE values.
+true= Banking details required.
+false= Banking details not required</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyin.02.17.data.xsd#DE13269" xlink:label="loc_DE13269"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE13269" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Interaction Start Record Identifier</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE13269" xlink:to="lbl_DE13269"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE13269" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">This is the value that specifies the first element of a list of values.</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyin.02.17.data.xsd#DE136" xlink:label="loc_DE136"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE136" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Payment Record Payment Reference Number</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE136" xlink:to="lbl_DE136"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE136" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">This is the unique reference number which identifies a payment.</link:label>
+        <link:label xlink:type="resource" xlink:label="lbl_DE136" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xml:lang="en">This number is generated before the payment is made, and it is used in conjunction with other Payment Mechanism data items to enable a payment via a chosen mechanism type.</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyin.02.17.data.xsd#pyin.02.17_pyinAbstract" xlink:label="loc_pyin.02.17_pyinAbstract"/>
+        <link:label xlink:type="resource" xlink:label="lbl_pyinAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Party Interaction</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_pyin.02.17_pyinAbstract" xlink:to="lbl_pyinAbstract"/>
+        <link:loc xlink:type="locator" xlink:href="pyin.02.17.data.xsd#DE13271" xlink:label="loc_DE13271"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE13271" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Interaction Next Record Identifier</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE13271" xlink:to="lbl_DE13271"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE13271" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">This is the value that specifies the next element in a list of values.</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyin.02.17.data.xsd#DE3136" xlink:label="loc_DE3136"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE3136" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Payment Mechanism Payment Reference Number Identifier</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE3136" xlink:to="lbl_DE3136"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE3136" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">A unique reference number made of 18 digits, which identifies payments uniquely. It is referred to in bills, letters, reports to allow the correlation between the relevant report, bill or letter and the payment associated with it. It is generated before the payment is made, and it is used in conjunction with other Payment Mechanism data items to enable a payment via a chosen mechanism type.</link:label>
+        <link:label xlink:type="resource" xlink:label="lbl_DE3136" xlink:role="http://sbr.gov.au/fdtn/sbr.01.03.tech/dataElementStatus" xml:lang="en">This element has been retired and should no longer be used.</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyin.02.17.data.xsd#DE3137" xlink:label="loc_DE3137"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE3137" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Payment Mechanism Reference Barcode</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE3137" xlink:to="lbl_DE3137"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE3137" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">This is the barcode used to generate an image as reference for payments.</link:label>
+        <link:loc xlink:type="locator" xlink:href="pyin.02.17.data.xsd#DE873" xlink:label="loc_DE873"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE873" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Payment Record Reference Barcode</link:label>
+        <link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE873" xlink:to="lbl_DE873"/>
+        <link:label xlink:type="resource" xlink:label="lbl_DE873" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">Barcode data used to generate an image as reference for payments.</link:label>
+        <link:label xlink:type="resource" xlink:label="lbl_DE873" xlink:role="http://sbr.gov.au/fdtn/sbr.01.03.tech/dataElementStatus" xml:lang="en">This element has been retired and should no longer be used.</link:label>
+    </link:labelLink>
+</link:linkbase>

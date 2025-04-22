@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xlink:href="../../../fdtn/tech.sbr.01.02.xsd#dataElementGuidance" xlink:type="simple"/>
+	<link:roleRef roleURI="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xlink:href="../../../fdtn/tech.sbr.01.02.xsd#businessDefinition" xlink:type="simple"/>
+	<link:labelLink xlink:role="http://www.xbrl.org/2003/role/link" xlink:type="extended">
+	<link:loc xlink:href="pyin.02.01.data.xsd#pyin.02.01_pyinAbstract" xlink:label="loc_pyinAbstract" xlink:type="locator"/>
+	<link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_pyinAbstract" xlink:to="lbl_pyinAbstract" xlink:type="arc"/>
+	<link:label xlink:label="lbl_pyinAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Party Interaction</link:label>
+	<link:loc xlink:href="pyin.02.01.data.xsd#DE911" xlink:label="loc_DE911" xlink:type="locator"/>
+	<link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE911" xlink:to="lbl_DE911" xlink:type="arc"/>
+	<link:label xlink:label="lbl_DE911" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Payment Record Arranged Payment Datetime</link:label>
+	<link:label xlink:label="lbl_DE911" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xlink:type="resource" xml:lang="en">The date and time arranged between the parties for the payment to occur.</link:label>
+	<link:loc xlink:href="pyin.02.01.data.xsd#DE831" xlink:label="loc_DE831" xlink:type="locator"/>
+	<link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE831" xlink:to="lbl_DE831" xlink:type="arc"/>
+	<link:label xlink:label="lbl_DE831" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Payment Record Payment Status Code</link:label>
+	<link:label xlink:label="lbl_DE831" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xlink:type="resource" xml:lang="en">This is the status associated with a payment made by an entity.</link:label>
+	<link:loc xlink:href="pyin.02.01.data.xsd#DE833" xlink:label="loc_DE833" xlink:type="locator"/>
+	<link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE833" xlink:to="lbl_DE833" xlink:type="arc"/>
+	<link:label xlink:label="lbl_DE833" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Report Type Code</link:label>
+	<link:label xlink:label="lbl_DE833" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xlink:type="resource" xml:lang="en">Valid values include: as.0001, f388.0001, ptmcnsw.0001</link:label>
+	<link:label xlink:label="lbl_DE833" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xlink:type="resource" xml:lang="en">The code that determines the kind of the report lodged. It uniquely identifies each report implemented by the SBR program.</link:label>
+	<link:loc xlink:type="locator" xlink:href="pyin.02.01.data.xsd#DE3148" xlink:label="loc_DE3148"/>
+	<link:label xlink:type="resource" xlink:label="lbl_DE3148" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Lodgment Channel Code</link:label>
+	<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE3148" xlink:to="lbl_DE3148" order="1.0"/>
+	<link:label xlink:type="resource" xlink:label="lbl_DE3148" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/dataElementGuidance" xml:lang="en">Paper - P
+Electronic - E
+Magnetic Information Processing Services - MIPS
+Electronic Activity Statement - EAS
+Electronic Client Interface - ECI
+Electronic Lodgment Service - ELS
+Return Data Capture Centre - RDCC
+Web Forms - WEB
+Revenue OnLine - RO
+Standard Business Report - SBR
+Form Definition Facility - FDF</link:label>
+<link:label xlink:type="resource" xlink:label="lbl_DE3148" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xml:lang="en">The code that identifies the lodgement channel used.</link:label>	
+	<link:loc xlink:href="pyin.02.01.data.xsd#DE626" xlink:label="loc_DE626" xlink:type="locator"/>
+	<link:labelArc order="1.0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DE626" xlink:to="lbl_DE626" xlink:type="arc"/>
+	<link:label xlink:label="lbl_DE626" xlink:role="http://www.xbrl.org/2003/role/label" xlink:type="resource" xml:lang="en">Payment Mechanism Customer Reference Number</link:label>
+	<link:label xlink:label="lbl_DE626" xlink:role="http://sbr.gov.au/fdtn/sbr.01.02.tech/businessDefinition" xlink:type="resource" xml:lang="en">The reference number used by the party to whom money is paid with the purpose of identifying the party making a payment through any of the electronic payment methods (ie. Bpay, EFT, Direct Debit or Direct Credit).</link:label>
+  </link:labelLink>
+</link:linkbase>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pyid.02.05="http://sbr.gov.au/icls/py/pyid/pyid.02.05.data" xmlns:dtyp.02.16="http://sbr.gov.au/fdtn/sbr.02.16.dtyp" xmlns:tech.01.02="http://sbr.gov.au/fdtn/sbr.01.02.tech" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://sbr.gov.au/icls/py/pyid/pyid.02.05.data" elementFormDefault="qualified">
+    <xsd:import namespace="http://sbr.gov.au/fdtn/sbr.02.16.dtyp" schemaLocation="../../../fdtn/dtyp.sbr.02.16.xsd"/>
+    <xsd:import namespace="http://sbr.gov.au/fdtn/sbr.01.02.tech" schemaLocation="../../../fdtn/tech.sbr.01.02.xsd"/>
+    <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+    <xsd:element name="pyidAbstract" id="pyid.02.05_pyidAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="Identifiers.EmploymentPayrollNumber.Identifier" id="DE9" type="xbrli:stringItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+    <xsd:element name="Identifiers.SuperannuationFundGeneratedEmployer.Indicator" id="DE12711" type="xbrli:booleanItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+    <xsd:element name="Identifiers.TaxFileNumberNotProvided.Indicator" id="DE12710" type="xbrli:booleanItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+</xsd:schema>

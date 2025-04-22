@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Disclaimer: http://www.sbr.gov.au/content/taxonomy_introduction_3_0.htm#Disclaimer -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:lrla.02.15="http://sbr.gov.au/icls/lr/lrla/lrla.02.15.data" xmlns:dtyp.02.16="http://sbr.gov.au/fdtn/sbr.02.16.dtyp" xmlns:tech.01.02="http://sbr.gov.au/fdtn/sbr.01.02.tech" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://sbr.gov.au/icls/lr/lrla/lrla.02.15.data" elementFormDefault="qualified">
+    <xsd:import namespace="http://sbr.gov.au/fdtn/sbr.02.16.dtyp" schemaLocation="../../../fdtn/dtyp.sbr.02.16.xsd"/>
+    <xsd:import namespace="http://sbr.gov.au/fdtn/sbr.01.02.tech" schemaLocation="../../../fdtn/tech.sbr.01.02.xsd"/>
+    <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+    <xsd:element name="lrlaAbstract" id="lrla.02.15_lrlaAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="instant"/>
+    <xsd:element name="EmployerConditions.EmploymentStatus.Code" id="DE12726" type="dtyp.02.16:sbrEmploymentStatusCodeItemType" block="substitution" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+</xsd:schema>
